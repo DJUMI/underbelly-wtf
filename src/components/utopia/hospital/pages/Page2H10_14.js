@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg10 from '../../../../assets/images/utopia/hospital/2H10_UTOPIA.jpg'
 import bg11 from '../../../../assets/images/utopia/hospital/2H11_UTOPIA.jpg'
 import bg12 from '../../../../assets/images/utopia/hospital/2H12_UTOPIA.jpg'
@@ -39,7 +40,7 @@ const Page2H10_14 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Oh shit! Dude you hit this person right on their head with the ball."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -48,7 +49,7 @@ const Page2H10_14 = () => {
                     <Typed
                         className='utopia__text--speaker2'
                         strings={['"Let\'s wait here until the ambulance arrives. Their companion is already contacting the ambulance."']}
-                        typeSpeed={40}
+                        typeSpeed={t.typeSpeed}
                         showCursor={false}
                         startDelay={5000}
                     />
@@ -70,7 +71,7 @@ const Page2H10_14 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Remember when ambulances used to cost money?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={24000}
                 />
@@ -80,7 +81,7 @@ const Page2H10_14 = () => {
                     <Typed
                         className='utopia__text--speaker2'
                         strings={['"Yeah what the hell was that?? I\'m glad the United Nations got rid of currency."']}
-                        typeSpeed={40}
+                        typeSpeed={t.typeSpeed}
                         showCursor={false}
                         startDelay={28000}
                     />
@@ -110,7 +111,7 @@ const Page2H10_14 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Still going or done?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={45000}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}

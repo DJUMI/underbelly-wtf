@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia4C_3.jpg'
 
 const Page5C_6 = () => {
@@ -15,7 +16,7 @@ const Page5C_6 = () => {
                     <Typed
                         className='dystopia__text'
                         strings={['"You don’t get to just leave once you’ve entered the Hospital District. It’s rude and devilish."']}
-                        typeSpeed={20}
+                        typeSpeed={t.typeSpeed}
                         showCursor={false}
                     />
                     <br></br>
@@ -23,7 +24,7 @@ const Page5C_6 = () => {
                     <Typed
                         className='dystopia__text'
                         strings={['"Police! Seize this demon immediately and send them to the Sick District!"']}
-                        typeSpeed={20}
+                        typeSpeed={t.typeSpeedFast}
                         showCursor={false}
                         startDelay={4000}
                     />

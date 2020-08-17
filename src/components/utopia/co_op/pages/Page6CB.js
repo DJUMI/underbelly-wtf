@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/co_op/6C_UTOPIA_FACECHANGE.jpg'
 
 const Page6CB = () => {
@@ -22,7 +23,7 @@ const Page6CB = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Hey! How\'s your head? Our companions told us you got injured pretty bad."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

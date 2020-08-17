@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 
 const Page2HB = () => {
@@ -22,7 +23,7 @@ const Page2HB = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"You got hit pretty hard in the head. Your companion let us know you weren\'t conscious. Would you like to view your impact memory provided by our Memory Service?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => {setShowResponse(true)}, 1000)}
                 />

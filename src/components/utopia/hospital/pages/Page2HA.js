@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIA.jpg'
 
 const Page2HA = () => {
@@ -22,7 +23,7 @@ const Page2HA = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Hey friend you\'re finally up! How are you feeling?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => {setShowResponse(true)}, 1000)}
                 />

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg1 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg2 from '../../../../assets/images/utopia/hospital/3H_UTOPIA_BUBBLE.jpg'
 
@@ -28,7 +29,7 @@ const Page3H = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Of course. Well, then you\'re all set to go home. The doctor will send over post-memory removal information to your companion. Since your memory is still coming back you might have forgotten that rides home are provided! Take care!"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setActivePanel(2) }, 1000)}
                 />

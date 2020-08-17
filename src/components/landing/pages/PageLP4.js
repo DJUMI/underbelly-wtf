@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../constants/text';
 import bg1 from '../../../assets/images/landing/LP4_1.png'
 import bg2 from '../../../assets/images/landing/LP4_2.png'
 
@@ -22,7 +23,7 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text'
                     strings={['Welcome to a future.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -31,7 +32,7 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text'
                     strings={['The worlds are intended to be explored. You may have to go through each more than once.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={2000}
                 />
@@ -41,7 +42,7 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text'
                     strings={['In fact it\'s encouraged.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={8000}
                 />
@@ -51,7 +52,7 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text'
                     strings={['Best of luck and remember, nothing is exactly as it seems.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={11000}
                 />
@@ -61,7 +62,7 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text--bold'
                     strings={['Where would you like to begin?']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={15000}
                 />

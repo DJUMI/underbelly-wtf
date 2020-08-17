@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/nature/7L3_UTOPIA.jpg'
 
 const Page7L_3B = () => {
@@ -25,7 +26,7 @@ const Page7L_3B = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Of course! Our main service is Assisted euthanization for those who are in extreme untreatable pain, have terminal illness, or those over 95 years of age."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -33,7 +34,7 @@ const Page7L_3B = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Our second most used service is Tree Transformation. Many families choose to have their deceased members ashes incorporated with soil to plant as trees!"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={11000}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/sick/Dystopia9C_2.jpg'
 
 const Page11C_2 = () => {
@@ -27,7 +28,7 @@ const Page11C_2 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"Everyone is terrified to come to the Sick District, but we actually have open beds and are actively treating patients. But, it’s better to keep that illusion. If the Hospital District or Police get their hands on this, they will start an all out war to keep people enslaved and under their thumb."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -35,7 +36,7 @@ const Page11C_2 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"That all being said…we are planning for the future. Several Bunker Districts Leaders are hoping to unite and start a much needed revolution, but it’s too risky right now. Anyway, I would like to give you the vaccine, while you’re here, so you can no longer contract COVID or infect others. Do you consent?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={18000}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}

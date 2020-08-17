@@ -25,15 +25,14 @@ const App = () => {
                 loop
             /> */}
             <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/utopia' component={UtopiaStart} />
-                <Route exact path='/dystopia' component={DystopiaStart} />
-
                 {/* Landing */}
-                <Route exact path='/LP1' component={l.PageLP1} />
+                <Route exact path='/' component={l.PageLP1} />
                 <Route exact path='/LP2' component={l.PageLP2} />
                 <Route exact path='/LP3' component={l.PageLP3} />
                 <Route exact path='/LP4' component={l.PageLP4} />
+
+                <Route exact path='/utopia' component={UtopiaStart} />
+                <Route exact path='/dystopia' component={DystopiaStart} />
 
                 {/* Utopia Hospital Chapter */}
                 <Route exact path='/utopia/2HA' component={u1.Page2HA} />

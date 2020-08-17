@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg16 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg17 from '../../../../assets/images/utopia/hospital/2H17_UTOPIA.jpg'
 import bg18 from '../../../../assets/images/utopia/hospital/2H18_UTOPIA.jpg'
@@ -38,7 +39,7 @@ const Page2H16_20 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Wonderful. I will call in the doctor to have her reinsert it. It\'s a very quick process!"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
             </div>
@@ -52,7 +53,7 @@ const Page2H16_20 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Hey friend! So you decided to keep the memory. The process is non invasive and takes just a few seconds."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={9000}
                 />
@@ -67,7 +68,7 @@ const Page2H16_20 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"I\'m just going to take your wrist and have the memory inserted through your microchip."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={21000}
                 />
@@ -94,7 +95,7 @@ const Page2H16_20 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"All set! I\'m going to send over some information to your companion so they can tell it to you once you\'re home. If you\'d like a ride home just let the receptionist know!"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     startDelay={41000}
                     onComplete={() => { setShowButton(true) }}

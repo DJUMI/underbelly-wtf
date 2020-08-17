@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia3C.jpg'
 
 const Page3C_1 = () => {
@@ -24,7 +25,7 @@ const Page3C_1 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"State your purpose."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/co_op/6C_UTOPIA_FACECHANGE.jpg'
 
 const Page6CC = () => {
@@ -13,7 +14,7 @@ const Page6CC = () => {
                     <Typed
                         className='utopia__text'
                         strings={['"You goof. And you’re still wearing your hospital gown, haha!"']}
-                        typeSpeed={40}
+                        typeSpeed={t.typeSpeed}
                         showCursor={false}
                     />
                 </div>

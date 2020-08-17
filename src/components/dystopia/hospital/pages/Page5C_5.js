@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia4C_1.jpg'
 
 const Page5C_5 = () => {
@@ -27,7 +28,7 @@ const Page5C_5 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"You learn how to treat the people who can afford to live here, which is really a blessing because you wouldn’t want to live in those vile bunkers. Instead, we give you a modest room in a resident’s apartment — after they’ve bought you, of course — and then you are one of the lucky ones who gets to care for these truly Lucky souls."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia4C_1.jpg'
 
 const Page5C_1 = () => {
@@ -27,7 +28,7 @@ const Page5C_1 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"Welcome to the blesséd Hospital District, praise be. Here, all lives matter. We treat every resident with a private doctor, especially if you contract that dreaded COVID being spread by those Bunker heathens. Please stand still while we scan you."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

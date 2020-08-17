@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia3C.jpg'
 
 const Page3C_2 = () => {
@@ -24,7 +25,7 @@ const Page3C_2 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"This is the entrance to the Hospital District. State your purpose."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

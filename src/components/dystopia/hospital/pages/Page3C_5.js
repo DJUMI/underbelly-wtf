@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia3C.jpg'
 
 const Page3C_5 = () => {
@@ -20,7 +21,7 @@ const Page3C_5 = () => {
             <Typed
                 className='dystopia__text'
                 strings={['"…Are you f*cking stupid? Get out of here, I’m done answering questions."']}
-                typeSpeed={20}
+                typeSpeed={t.typeSpeedFast}
                 showCursor={false}
             />
         </div>

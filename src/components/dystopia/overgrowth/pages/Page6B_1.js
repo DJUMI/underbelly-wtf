@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/overgrowth/Dystopia6B.jpg'
 
 const Page6B_1 = () => {
@@ -24,7 +25,7 @@ const Page6B_1 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['We’re scavenging. We’re scavengers.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -33,7 +34,7 @@ const Page6B_1 = () => {
                     <Typed
                         className='utopia__text--speaker2'
                         strings={['I guess it’s not really super public yet, but the Bunker District finally has some ventilation for melting down old metals from this B.C. world so we can make more bed frames for the Clinics and stuff.']}
-                        typeSpeed={40}
+                        typeSpeed={t.typeSpeed}
                         startDelay={3000}
                         showCursor={false}
                         onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}

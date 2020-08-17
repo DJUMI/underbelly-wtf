@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 
 const Page2H15 = () => {
@@ -25,7 +26,7 @@ const Page2H15 = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Now, would you like it reinserted in your memories or do you want it permanently removed? You might experience some headaches when reinserted."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

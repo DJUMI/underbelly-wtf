@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/sick/Dystopia9C_2.jpg';
 
 const Page11C = () => {
@@ -27,7 +28,7 @@ const Page11C = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"Welcome to the Sick District, you look surprised."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg1 from '../../../../assets/images/utopia/hospital/1H_UTOPIA.jpg'
 import bg2 from '../../../../assets/images/utopia/nature/3L1_UTOPIA.jpg'
 
@@ -21,7 +22,7 @@ const Page10C = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"I don’t think they’re going to wake up. It’s the 5 year mark for coma patients so we have to transfer them to Choose Your Time."']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                 />
                 <br></br>
@@ -30,7 +31,7 @@ const Page10C = () => {
                     <Typed
                         className='utopia__text--speaker2'
                         strings={['"I’ll call them right now. Their ID says they’re a donor and approve Tree Transformation."']}
-                        typeSpeed={40}
+                        typeSpeed={t.typeSpeed}
                         showCursor={false}
                         startDelay={8000}
                     />

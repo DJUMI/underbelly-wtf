@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/nature/7L3_UTOPIA.jpg'
 
 const Page7L_3A = () => {
@@ -22,7 +23,7 @@ const Page7L_3A = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"Welcome to Choose Your Time! Do you have an appointment?"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

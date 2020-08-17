@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/hospital/Dystopia3C.jpg'
 
 const Page3C_3 = () => {
@@ -24,7 +25,7 @@ const Page3C_3 = () => {
                 <Typed
                     className='dystopia__text'
                     strings={['"Have you been living under a f*cking rock? The military was disbanded years ago, when the country had to shut down because of The Second Wave. I used to be a f*cking Marine before this sh*t. I’m Police, now. Hoo rah…"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

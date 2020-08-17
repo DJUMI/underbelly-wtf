@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 //import bg from '../../../../assets/images/dystopia/bunker/Dystopia3A.jpg'
 
 const Page3A = () => {
@@ -24,7 +25,7 @@ const Page3A = () => {
                 <Typed
                     className='utopia__text'
                     strings={['I see. In that case, we will open the bunker doors for you. Once you enter, you will be required to undergo a brief health evaluation. Please proceed down the stairs to the Medic Chamber.']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
                 />

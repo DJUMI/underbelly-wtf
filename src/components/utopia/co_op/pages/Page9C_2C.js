@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
+import t from '../../../../constants/text';
 import bg from '../../../../assets/images/utopia/co_op/9C2_UTOPIA.jpg'
 
 const Page9C_2C = () => {
@@ -24,7 +25,7 @@ const Page9C_2C = () => {
                 <Typed
                     className='utopia__text'
                     strings={['"One pasta sauce coming right up!"']}
-                    typeSpeed={40}
+                    typeSpeed={t.typeSpeed}
                     showCursor={false}
                     onComplete={() => setTimeout(() => { setShowButton(true) }, 1000)}
                 />
