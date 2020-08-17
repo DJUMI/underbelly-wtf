@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
-import bg from '../../../../assets/images/dystopia/overgrowth/Dystopia4B.jpg'
+//import bg from '../../../../assets/images/dystopia/overgrowth/Dystopia4B.jpg'
 
 const Page5B = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia4B.jpg';
+
     const [showResponse, setShowResponse] = useState(false);
 
     const renderResponse = () => (

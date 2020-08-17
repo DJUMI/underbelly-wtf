@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bg from '../../../../assets/images/dystopia/hospital/Dystopia2C.jpg'
+//import bg from '../../../../assets/images/dystopia/hospital/Dystopia2C.jpg'
 
 const Page1C = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia2C.jpg';
 
     return (
         <div className='page'>
