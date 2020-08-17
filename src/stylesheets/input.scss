@@ -1,0 +1,1008 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #ff0000;
+$secondary-color: #1b998a;
+$primary-color-light: #392347;
+$secondary-color-dark: #18897c;
+$text-background: rgba(0, 0, 0, 0.5);
+$text-background-utopia: rgba(255, 255, 255, 0.5);
+$text-utopia: #042f66;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: scroll;
+}
+
+.page {
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+
+//transitions
+
+.page--transition {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.page--transition.active {
+  opacity: 1;
+}
+
+.page--slow {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 4s ease-in-out 2s;
+}
+
+.page--slow.active {
+  opacity: 1;
+}
+.page--mono {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.page--mono.active {
+  opacity: 1;
+}
+
+.page__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.page__header--dystopia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+.page__header--screen {
+  position: absolute;
+  top: 5vh;
+  left: 13vw;
+  width: 74vw;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+.page__footer--dystopia {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+.page__header--utopia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40px;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+.page__footer--utopia {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+.text__link {
+  text-decoration: none;
+}
+
+.dystopia__text {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.dystopia__text--speaker2 {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  text-align: end;
+  font-family: "calibri";
+}
+
+.dystopia__text--clickable {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.dystopia__text--clickable:hover {
+  color: $primary-color;
+}
+
+.utopia__text {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.utopia__text--blank {
+  opacity: 0;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.utopia__text--mono {
+  color: green;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.right-align {
+  width: 100%;
+  text-align: end;
+}
+
+.utopia__text--speaker2 {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  text-align: end;
+  font-family: "calibri";
+}
+
+.utopia__text--clickable {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.utopia__text--clickable:hover {
+  color: $primary-color;
+}
+
+.clickable:hover {
+  background-color: $primary-color;
+  opacity: 0.25;
+}
+
+.clickable--svg {
+  fill-opacity: 0;
+}
+
+.clickable--svg:hover {
+  fill: $primary-color;
+  fill-opacity: 0.25;
+}
+
+.svg__container--back {
+  display: inline-block;
+  position: absolute;
+  top: 25vh;
+  left: 0vw;
+  height: 50vh;
+  width: 20vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.svg__content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+//Landing
+
+.LP1__button {
+  position: absolute;
+  top: 44vh;
+  left: 21vw;
+  height: 14vh;
+  width: 58vw;
+}
+
+.LP3__button {
+  position: absolute;
+  top: 26vh;
+  left: 68vw;
+  height: 28vh;
+  width: 15.5vw;
+}
+
+.LP4__button--utopia {
+  position: absolute;
+  top: 88vh;
+  left: 26.5vw;
+  height: 6.5vh;
+  width: 16.5vw;
+}
+
+.LP4__button--dystopia {
+  position: absolute;
+  top: 88vh;
+  left: 55vw;
+  height: 6.5vh;
+  width: 22.25vw;
+}
+
+.LP__text_container {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.LP__text {
+  color: white;
+}
+
+.LP__text--bold {
+  color: white;
+  font-weight: bold;
+}
+
+//Utopia Start
+
+.u_start__svg__container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 42vw;
+  height: 33vh;
+  width: 20vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//hospital chapter
+
+.p2H4__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 34.75vh;
+  left: 44vw;
+  height: 7.5vh;
+  width: 4.25vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2H5__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 25vh;
+  left: 50.5vw;
+  height: 7.5vh;
+  width: 4vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2H6__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 45.5vh;
+  left: 48.5vw;
+  height: 3.5vh;
+  width: 2.25vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3H__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 29vh;
+  left: 79.5vw;
+  height: 10.5vh;
+  width: 6vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3H_bubble {
+  position: absolute;
+  background-color: red;
+  top: 80vh;
+  left: 70vw;
+}
+
+.p1L__svg__container--pond {
+  display: inline-block;
+  position: absolute;
+  top: 40vh;
+  left: 7.75vw;
+  height: 24vh;
+  width: 24vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p1L__svg__container--bench {
+  display: inline-block;
+  position: absolute;
+  top: 38.5vh;
+  left: 45vw;
+  height: 45vh;
+  width: 20vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p1L__svg__container--houses {
+  display: inline-block;
+  position: absolute;
+  top: 16vh;
+  left: 73vw;
+  height: 29vh;
+  width: 25vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2L_1__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 29vh;
+  left: 41.5vw;
+  height: 41.5vh;
+  width: 18vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2L_2__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  height: 86vh;
+  width: 43.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3L_1__svg__container--tree {
+  display: inline-block;
+  position: absolute;
+  top: 44.5vh;
+  left: 41.5vw;
+  height: 10vh;
+  width: 2.75vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3L_1__svg__container--bench {
+  display: inline-block;
+  position: absolute;
+  top: 70vh;
+  left: 52vw;
+  height: 20vh;
+  width: 16.75vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3L_2__svg__container--face {
+  display: inline-block;
+  position: absolute;
+  top: 36vh;
+  left: 41vw;
+  height: 14vh;
+  width: 4vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3L_4__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 12vh;
+  left: 13.25vw;
+  height: 9.75vh;
+  width: 6.25vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p4L__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 41vh;
+  left: 38.5vw;
+  height: 53.75vh;
+  width: 11vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p6L__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 17vh;
+  left: 11vw;
+  height: 74.5vh;
+  width: 71.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L__svg__container--van {
+  display: inline-block;
+  position: absolute;
+  top: 17vh;
+  left: 79.75vw;
+  height: 73.5vh;
+  width: 21.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_1__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 72vh;
+  left: 35.5vw;
+  height: 15vh;
+  width: 8vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_2__svg__container--poster {
+  display: inline-block;
+  position: absolute;
+  top: 24vh;
+  left: 5vw;
+  height: 27vh;
+  width: 17vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_2__svg__container--desk {
+  display: inline-block;
+  position: absolute;
+  top: 43.5vh;
+  left: 41vw;
+  height: 40vh;
+  width: 33.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_2__svg__container--tv {
+  display: inline-block;
+  position: absolute;
+  top: 10.5vh;
+  left: 60vw;
+  height: 21vh;
+  width: 15vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_5__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 6vh;
+  left: 47vw;
+  height: 6vh;
+  width: 3vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_7__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 68vh;
+  left: 68.5vw;
+  height: 3vh;
+  width: 2.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p7L_8__svg__container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 25vw;
+  height: 20vh;
+  width: 50vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//co_op chapter
+
+.p1C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 36vh;
+  left: 45vw;
+  height: 39vh;
+  width: 20.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2C__svg__container--board {
+  display: inline-block;
+  position: absolute;
+  top: 8vh;
+  left: 5vw;
+  height: 48vh;
+  width: 37vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2C__svg__container--door {
+  display: inline-block;
+  position: absolute;
+  top: 28vh;
+  left: 48vw;
+  height: 48vh;
+  width: 17vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 60vh;
+  left: 84vw;
+  height: 7vh;
+  width: 2vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p5C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 21vh;
+  left: 10vw;
+  height: 21vh;
+  width: 9vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p8C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 88vh;
+  left: 42vw;
+  height: 5vh;
+  width: 3vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C__svg__container--door {
+  display: inline-block;
+  position: absolute;
+  top: 8vh;
+  left: 34vw;
+  height: 18vh;
+  width: 6vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C__svg__container--kitchen {
+  display: inline-block;
+  position: absolute;
+  top: 25vh;
+  left: 28vw;
+  height: 15vh;
+  width: 18vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C__svg__container--stairs {
+  display: inline-block;
+  position: absolute;
+  top: 0vh;
+  left: 50vw;
+  height: 100vh;
+  width: 45vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C_1A__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 63vh;
+  left: 67.75vw;
+  height: 2.5vh;
+  width: 2vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C_1B__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 93.5vh;
+  left: 53.25vw;
+  height: 3vh;
+  width: 2vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C_2__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 28vh;
+  left: 73vw;
+  height: 31vh;
+  width: 9vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C_3__svg__container--bed {
+  display: inline-block;
+  position: absolute;
+  top: 22vh;
+  left: 0vw;
+  height: 67vh;
+  width: 40vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C_3__svg__container--controller {
+  display: inline-block;
+  position: absolute;
+  top: 41vh;
+  left: 61.5vw;
+  height: 5.5vh;
+  width: 4vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9C5_7__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  height: 100vh;
+  width: 80vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/**************** Dystopia Start ******************/
+
+.d-start__svg__container--comp {
+  display: inline-block;
+  position: absolute;
+  top: 58vh;
+  left: 58vw;
+  height: 14.5vh;
+  width: 5.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.d-start__svg__container--fence {
+  display: inline-block;
+  position: absolute;
+  top: 36vh;
+  left: 72vw;
+  height: 11vh;
+  width: 5.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.dystopia__button--exit {
+  position: absolute;
+  top: 90.2vh;
+  left: 76.61vw;
+  height: 4.5vh;
+  width: 8.9vw;
+}
+
+//bunker chapter
+
+.p1A__button--entry {
+  position: absolute;
+  top: 90vh;
+  left: 12vw;
+  height: 5vh;
+  width: 27vw;
+}
+
+.p4A__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 56vh;
+  left: 24.5vw;
+  height: 15vh;
+  width: 16.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p4A_1__svg__container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 34.5vw;
+  height: 32vh;
+  width: 33vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//overgrowth chapter
+
+.p1B__svg__container--house {
+  display: inline-block;
+  position: absolute;
+  top: 26vh;
+  left: 43vw;
+  height: 28vh;
+  width: 5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p1B__svg__container--car {
+  display: inline-block;
+  position: absolute;
+  top: 17.5vh;
+  left: 64vw;
+  height: 36vh;
+  width: 23vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p1B__svg__container--sign {
+  display: inline-block;
+  position: absolute;
+  top: 15vh;
+  left: 84vw;
+  height: 11vh;
+  width: 8.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2B__svg__container--newspaper {
+  display: inline-block;
+  position: absolute;
+  top: 61vh;
+  left: 20vw;
+  height: 38vh;
+  width: 36vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2B__svg__container--masks {
+  display: inline-block;
+  position: absolute;
+  top: 42vh;
+  left: 56vw;
+  height: 15vh;
+  width: 12vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2B__svg__container--flier {
+  display: inline-block;
+  position: absolute;
+  top: 25vh;
+  left: 54.5vw;
+  height: 14vh;
+  width: 8.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3B__svg__container--door {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 34vw;
+  height: 90vh;
+  width: 30vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p3B_1__svg__container--knob {
+  display: inline-block;
+  position: absolute;
+  top: 80vh;
+  left: 59vw;
+  height: 8vh;
+  width: 4vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p4B__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 62.5vh;
+  left: 72vw;
+  height: 10.5vh;
+  width: 6vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//hospital chapter
+
+.p1C__svg__container--guards {
+  display: inline-block;
+  position: absolute;
+  top: 37vh;
+  left: 79.5vw;
+  height: 22vh;
+  width: 5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2C__svg__container--guards {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 5vw;
+  height: 100vh;
+  width: 69vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p2C__svg__container--enter {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  height: 24vh;
+  width: 27vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p4C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 18vh;
+  left: 38vw;
+  height: 41vh;
+  width: 21.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//sick district chapter
+
+.p9C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 0vh;
+  left: 28vw;
+  height: 100vh;
+  width: 46vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p10C__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 37vh;
+  left: 43vw;
+  height: 62vh;
+  width: 14.5vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+//fade ins
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bubble-fade {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
