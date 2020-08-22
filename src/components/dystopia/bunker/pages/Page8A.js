@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import MapModal from '../modals/MapModal';
 
 const Page8A = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia8A.jpg';
+
     return (
-        <div>
-            <p>Page 8A</p>
-            <Link to='/dystopia/9A'>go to 9A</Link>
-            <Link to='/dystopia/10A'>go to 10A</Link>
-            <Link to='/dystopia/11A'>go to 11A</Link>
-            <Link to='/dystopia/12A'>go to 12A</Link>
+        <div className='page'>
+            <img className='page__image' src={bg} alt='Map of the bunker district' />
+            <MapModal />
         </div>
     );
 };

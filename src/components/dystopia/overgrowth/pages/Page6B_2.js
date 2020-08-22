@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '../../../../constants/text';
-//import bg from '../../../../assets/images/dystopia/overgrowth/Dystopia6B.jpg'
 
 const Page6B_2 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia6B.jpg';

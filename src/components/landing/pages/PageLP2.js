@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bg from '../../../assets/images/landing/LP2.png'
-
 const PageLP2 = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP2.png';
+
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Please enter access code' />

@@ -3,16 +3,21 @@ import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '../../../../constants/text';
-import bg1 from '../../../../assets/images/utopia/hospital/1H_UTOPIA.jpg'
-import bg2 from '../../../../assets/images/utopia/nature/3L1_UTOPIA.jpg'
+import bg1 from '../../../../assets/images/utopia/co_op/10C_UTOPIA.jpg'
+import bg2 from '../../../../assets/images/utopia/co_op/11C_UTOPIA.jpg'
+import bg3 from '../../../../assets/images/landing/end.png'
 
 const Page10C = () => {
-    const [activePanel, setActivePanel] = useState(1);
+    const [activePanel, setActivePanel] = useState(3);
 
     useEffect(() => {
         setTimeout(() => {
-            setActivePanel(2);
+            setActivePanel(3);
         }, 20000);
+
+        setTimeout(() => {
+            setActivePanel(3);
+        }, 30000);
     }, []);
 
     const render10C = () => (
@@ -46,10 +51,22 @@ const Page10C = () => {
         </div>
     );
 
+    const render12C = () => (
+        <div className={`page--transition ${activePanel === 3 ? 'active' : ''}`}>
+            <img className='page__image' src={bg3} alt='Big tree' />
+            <Link to='/LP4'>
+                <div className='LP__text_container--end'>
+                    <span className='LP__text'>Try again?</span>
+                </div>
+            </Link>
+        </div>
+    );
+
     return (
         <div className='page'>
             {render10C()}
             {render11C()}
+            {render12C()}
         </div>
     );
 };

@@ -4,7 +4,10 @@ $secondary-color: #1b998a;
 $primary-color-light: #392347;
 $secondary-color-dark: #18897c;
 $text-background: rgba(0, 0, 0, 0.5);
+$text-background-dystopia: rgba(255, 255, 255, 0.75);
 $text-background-utopia: rgba(255, 255, 255, 0.5);
+$text-dystopia: black;
+$text-dystopia-name: #800000;
 $text-utopia: #042f66;
 
 * {
@@ -22,6 +25,20 @@ body,
   height: 100%;
   background-color: black;
   z-index: -1;
+}
+
+.modal__container {
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+.modal__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 //transitions
@@ -218,6 +235,84 @@ body,
   width: 100%;
 }
 
+//Dialogue
+
+.dialogue--dystopia {
+  position: absolute;
+  top: 5vh;
+  left: 15vw;
+  min-width: 50%;
+  max-width: 70%;
+  border-radius: 10px;
+  background-color: $text-background-dystopia;
+  padding: 10px;
+}
+
+.dialogue--dystopia--bottom {
+  position: absolute;
+  bottom: 5vh;
+  left: 15vw;
+  min-width: 50%;
+  max-width: 70%;
+  border-radius: 10px;
+  background-color: $text-background-dystopia;
+  padding: 10px;
+}
+
+.dialogue__text--dystopia {
+  color: $text-dystopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "courier";
+}
+
+.dialogue__text--dystopia--name {
+  color: $text-dystopia-name;
+  font-size: large;
+  font-weight: bold;
+  font-family: "courier";
+}
+
+.dialogue__text--dystopia--clickable {
+  color: $text-dystopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "courier";
+}
+
+.dialogue__text--dystopia--clickable:hover {
+  color: $primary-color;
+}
+
+.dialogue__container--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dialogue__icon--dystopia {
+  width: 10vw;
+}
+
+
+
+
+
+
+
+
+
+.page__header--screen {
+  position: absolute;
+  top: 5vh;
+  left: 13vw;
+  width: 74vw;
+  background-color: $text-background-utopia;
+  padding: 10px;
+}
+
+
+
 //Landing
 
 .LP1__button {
@@ -255,6 +350,14 @@ body,
 .LP__text_container {
   position: absolute;
   top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.LP__text_container--end {
+  position: absolute;
+  top: 75vh;
   left: 25vw;
   width: 50vw;
   text-align: center;
@@ -775,6 +878,105 @@ body,
   overflow: hidden;
 }
 
+.p5A__svg__container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 32vw;
+  height: 86vh;
+  width: 29vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.map__svg__container--clinic {
+  display: inline-block;
+  position: absolute;
+  top: 63vh;
+  left: 39vw;
+  height: 9vh;
+  width: 17vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.map__svg__container--market {
+  display: inline-block;
+  position: absolute;
+  top: 43vh;
+  left: 39vw;
+  height: 20vh;
+  width: 17vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.map__svg__container--cinema {
+  display: inline-block;
+  position: absolute;
+  top: 55vh;
+  left: 56vw;
+  height: 17vh;
+  width: 15vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.map__svg__container--apartment {
+  display: inline-block;
+  position: absolute;
+  top: 18vh;
+  left: 58vw;
+  height: 12vh;
+  width: 7vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9A__svg__container--sign {
+  display: inline-block;
+  position: absolute;
+  top: 47vh;
+  left: 37vw;
+  height: 23vh;
+  width: 8vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p9A__svg__container--poster {
+  display: inline-block;
+  position: absolute;
+  top: 36vh;
+  left: 90vw;
+  height: 15vh;
+  width: 7vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p12A__svg__container {
+  display: inline-block;
+  position: absolute;
+  top: 18vh;
+  left: 40vw;
+  height: 31vh;
+  width: 3vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.p13A__svg__container--ipod {
+  display: inline-block;
+  position: absolute;
+  top: 85.5vh;
+  left: 73vw;
+  height: 3vh;
+  width: 4vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 //overgrowth chapter
 
 .p1B__svg__container--house {
@@ -948,11 +1150,11 @@ body,
 
 //fade ins
 .fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
 }
 @keyframes fadeIn {
   0% {

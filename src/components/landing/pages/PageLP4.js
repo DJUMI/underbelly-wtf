@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '../../../constants/text';
-import bg1 from '../../../assets/images/landing/LP4_1.png'
-import bg2 from '../../../assets/images/landing/LP4_2.png'
 
 const PageLP4 = () => {
+    const bg1 = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP4_1.png';
+    const bg2 = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP4_2.png'
+
     const [activePanel, setActivePanel] = useState(1);
 
     useEffect(() => {

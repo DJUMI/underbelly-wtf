@@ -12,10 +12,10 @@ const Page5_6L = () => {
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(2);
-        }, 5000);
+        }, 3000);
         setTimeout(() => {
             setShowButton(true);
-        }, 5400);
+        }, 3500);
     }, []);
 
     const renderButton = () => (

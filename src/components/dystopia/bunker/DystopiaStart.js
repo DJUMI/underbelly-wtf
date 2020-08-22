@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-//import bg from '../../../assets/images/dystopia/dystopia_start.jpg'
-
 const DystopiaStart = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/dystopia_start.jpg';
     

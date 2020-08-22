@@ -96,11 +96,6 @@ const Page2H10_14 = () => {
             <div className={`page--slow ${activePanel === 13 ? 'active' : ''}`}>
                 <img className='page__image' src={bg13_bubble} alt='Memory over and a thought bubble' />
             </div>
-            <div className='page__header--utopia'>
-                <div className='fade-in'>
-                    <p className='utopia__text--mono'>"...wait where are the flowers I picked?"</p>
-                </div>
-            </div>
         </div>
     );
 

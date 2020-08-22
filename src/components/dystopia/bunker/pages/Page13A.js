@@ -2,12 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Page13A = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia10A.jpg';
+
     return (
-        <div>
-            <p>Page 13A</p>
-            <Link to='/dystopia/13A1'>go to 13A1</Link>
-            <Link to='/dystopia/13A2'>go to 13A2</Link>
-            <Link to='/dystopia/14A'>go to 14A</Link>
+        <div className='page'>
+            <img className='page__image' src={bg} alt='Cinema' />
+            <div className='p13A__svg__container--ipod'>
+                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
+                    <Link to='/dystopia/13A'>
+                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
+                    </Link>
+                </svg>
+            </div>
         </div>
     );
 };

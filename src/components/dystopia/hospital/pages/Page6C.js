@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '../../../../constants/text';
-//import bg from '../../../../assets/images/dystopia/hospital/Dystopia5C_1.jpg'
 
 const Page6C = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia5C_1.jpg';
+
     return (
         <div className='page'>
-            {/* <img className='page__image' src={bg} alt='Hospital reception desk' /> */}
+            <img className='page__image' src={bg} alt='Hospital reception desk' />
             <div className='page__footer--dystopia'>
                 <Typed
                     className='dystopia__text'

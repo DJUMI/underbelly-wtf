@@ -97,7 +97,10 @@ const App = () => {
                 <Route exact path='/dystopia/4A' component={d1.Page4A} />
                 <Route exact path='/dystopia/4A_1' component={d1.Page4A_1} />
                 <Route exact path='/dystopia/5A' component={d1.Page5A} />
-                <Route exact path='/dystopia/5A1' component={d1.Page5A1} />
+                <Route exact path='/dystopia/5A_A' component={d1.Page5A_A} />
+                <Route exact path='/dystopia/5A1_A' component={d1.Page5A1_A} />
+                <Route exact path='/dystopia/5A1_B' component={d1.Page5A1_B} />
+                <Route exact path='/dystopia/5A1_C' component={d1.Page5A1_C} />
                 <Route exact path='/dystopia/5A2' component={d1.Page5A2} />
                 <Route exact path='/dystopia/6A' component={d1.Page6A} />
                 <Route exact path='/dystopia/7A' component={d1.Page7A} />

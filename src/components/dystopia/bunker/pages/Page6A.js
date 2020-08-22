@@ -1,12 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { Dialogue } from '../../../common';
 
 const Page6A = () => {
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia7A.jpg';
+
     return (
-        <div>
-            <p>Page 6A</p>
-            <Link to='/dystopia/7A'>go to 7A</Link>
-            <Link to='/dystopia'>go to dystopia start</Link>
+        <div className='page'>
+            <img className='page__image' src={bg} alt='Top of stairs down to door that leads inside of bunker' />
+            <Dialogue
+                theme='dystopia'
+                bottom
+                button
+                buttonLink='/dystopia/7A'
+                messages={[
+                    { speaker: 'HDS Guard "Moore"', message: 'Great, because we actually have been scanning your vitals since you walked in. You’re clean, although you could probably stand to floss your teeth  a little more.' }
+                ]}
+            />
         </div>
     );
 };
