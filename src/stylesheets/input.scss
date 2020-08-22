@@ -226,6 +226,17 @@ body,
   overflow: hidden;
 }
 
+.svg__container--map {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  height: 18vh;
+  width: 21vw;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .svg__content {
   display: inline-block;
   position: absolute;
