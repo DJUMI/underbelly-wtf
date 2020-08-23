@@ -24,48 +24,40 @@ const PageLP4 = () => {
                 <Typed
                     className='LP__text'
                     strings={['Welcome to a future.']}
-                    typeSpeed={t.typeSpeed}
+                    typeSpeed={t.typeSpeedFast}
                     showCursor={false}
                 />
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <Typed
                     className='LP__text'
                     strings={['The worlds are intended to be explored. You may have to go through each more than once.']}
-                    typeSpeed={t.typeSpeed}
+                    typeSpeed={t.typeSpeedFast}
                     showCursor={false}
-                    startDelay={2000}
+                    startDelay={1600}
                 />
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <Typed
                     className='LP__text'
                     strings={['In fact it\'s encouraged.']}
-                    typeSpeed={t.typeSpeed}
+                    typeSpeed={t.typeSpeedFast}
                     showCursor={false}
-                    startDelay={8000}
+                    startDelay={5500}
                 />
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <Typed
                     className='LP__text'
                     strings={['Best of luck and remember, nothing is exactly as it seems.']}
-                    typeSpeed={t.typeSpeed}
+                    typeSpeed={t.typeSpeedFast}
                     showCursor={false}
-                    startDelay={11000}
+                    startDelay={8000}
                 />
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <Typed
                     className='LP__text--bold'
                     strings={['Where would you like to begin?']}
-                    typeSpeed={t.typeSpeed}
+                    typeSpeed={t.typeSpeedFast}
                     showCursor={false}
-                    startDelay={15000}
+                    startDelay={12000}
                 />
             </div>
 
@@ -77,21 +69,13 @@ const PageLP4 = () => {
             <img className='page__image' src={bg2} alt='Enter' />
             <div className='LP__text_container'>
                 <span className='LP__text'>Welcome to a future.</span>
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <span className='LP__text'>The worlds are intended to be explored. You may have to go through each more than once.</span>
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <span className='LP__text'>In fact it's encouraged.</span>
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <span className='LP__text'>Best of luck and remember, nothing is exactly as it seems.</span>
-                <br></br>
-                <br></br>
-                <br></br>
+                <br></br><br></br><br></br>
                 <span className='LP__text--bold'>Where would you like to begin?</span>
             </div>
         </div>

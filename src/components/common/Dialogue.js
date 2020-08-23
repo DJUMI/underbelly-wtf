@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '.././../constants/text';
-import d_next from '../../assets/icons/dystopia/forward.png'
+import d_next from '../../assets/icons/dystopia/forward-small.png'
 
 /* component to render dialogue boxes
     theme = string(utopia or dystopia)

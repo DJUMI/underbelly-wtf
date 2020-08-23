@@ -85,22 +85,15 @@ p {
   width: 100%;
 }
 
-/**************** Link Button ******************/
-.link-button__svg--box {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+/**************** Border Button ******************/
+.border-button__container {
   height: 100%;
   width: 100%;
 }
 
-.link-button__svg {
-  fill-opacity: 0;
-}
-
-.link-button__svg:hover {
-  fill-opacity: 0.75;
+.border-button__container:hover {
+  border: 10px solid red;
+  border-radius: 15px;
 }
 
 /**************** Dialogue ******************/
@@ -131,7 +124,7 @@ p {
 }
 
 .dialogue__icon--dystopia {
-  width: 10vw;
+  width: 5vw;
 }
 
 .dialogue__text--dystopia {
@@ -184,6 +177,24 @@ p {
   color: #ff0000;
 }
 
+/**************** Link Button ******************/
+.link-button__svg--box {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.link-button__svg {
+  fill-opacity: 0;
+}
+
+.link-button__svg:hover {
+  fill-opacity: 0.75;
+}
+
 /**************** Landing ******************/
 .LP1__button {
   position: absolute;
@@ -191,14 +202,6 @@ p {
   left: 21vw;
   height: 14vh;
   width: 58vw;
-}
-
-.LP3__button {
-  position: absolute;
-  top: 26vh;
-  left: 68vw;
-  height: 28vh;
-  width: 15.5vw;
 }
 
 .LP4__button--utopia {
@@ -234,12 +237,16 @@ p {
 }
 
 .LP__text {
-  color: white;
+  color: green;
+  font-family: "courier";
+  font-size: larger;
 }
 
 .LP__text--bold {
-  color: white;
+  color: green;
   font-weight: bold;
+  font-family: "courier";
+  font-size: larger;
 }
 
 /**************** Dystopia ******************/

@@ -27,7 +27,7 @@ const Page7C = () => {
             />
             <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
                 <img className='page__image' src={bg1} alt='Game Over' />
-                <Link to='/LP4'>
+                <Link to='/LP5'>
                     <div className='LP__text_container--end'>
                         <span className='LP__text'>Try again?</span>
                     </div>

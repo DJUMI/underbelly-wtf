@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { BorderButton } from '../../common';
 
 const PageLP1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP1.png';
@@ -7,9 +8,7 @@ const PageLP1 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Enter' />
-            <Link to='/LP2'>
-                <div className='clickable LP1__button' />
-            </Link>
+            <BorderButton link='/LP2' top='44vh' left='21vw' height='14vh' width='58vw' />
         </div>
     );
 };

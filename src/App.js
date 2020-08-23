@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ReactAudioPlayer from 'react-audio-player';
 
-import Home from './components/Home';
 import ErrorPage from './components/ErrorPage';
 import UtopiaStart from './components/utopia/hospital/UtopiaStart';
 import DystopiaStart from './components/dystopia/bunker/DystopiaStart';
@@ -30,6 +29,7 @@ const App = () => {
                 <Route exact path='/LP2' component={l.PageLP2} />
                 <Route exact path='/LP3' component={l.PageLP3} />
                 <Route exact path='/LP4' component={l.PageLP4} />
+                <Route exact path='/LP5' component={l.PageLP5} />
 
                 <Route exact path='/utopia' component={UtopiaStart} />
                 <Route exact path='/dystopia' component={DystopiaStart} />
