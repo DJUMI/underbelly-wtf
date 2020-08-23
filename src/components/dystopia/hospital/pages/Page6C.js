@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
+import bg1 from '../../../../assets/images/landing/end.png';
 
 const Page6C = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia5C_1.jpg';
 
+    const [activePanel, setActivePanel] = useState(1);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setActivePanel(2);
+        }, 10000);
+    }, []);
+
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Hospital reception desk' />
-            <div className='page__footer--dystopia'>
-                <Typed
-                    className='dystopia__text'
-                    strings={['"After only a week of training, which a lot of it was just learning prayers, you are bought by one of the residents to take of for the rest of your time in the District. There is no option for escape, this is your life now."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                />
-                <p className='dystopia__text'>fin.</p>
+            <Dialogue
+                theme='dystopia'
+                bottom
+                messages={[
+                    { speaker: '', message: 'After only a week of training, which consisted of memorizing prayers, you are purchased by one of the residents. Your duties are to now care for your Blessed resident for the rest of your time in the District.' }
+                ]}
+            />
+            <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
+                <img className='page__image' src={bg1} alt='Game Over' />
+                <Link to='/LP4'>
+                    <div className='LP__text_container--end'>
+                        <span className='LP__text'>Try again?</span>
+                    </div>
+                </Link>
             </div>
         </div>
     );

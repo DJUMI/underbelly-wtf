@@ -152,6 +152,7 @@ const App = () => {
                 <Route exact path='/dystopia/11C_1' component={d4.Page11C_1} />
                 <Route exact path='/dystopia/11C_2' component={d4.Page11C_2} />
                 <Route exact path='/dystopia/11C_3' component={d4.Page11C_3} />
+                <Route exact path='/dystopia/11C_4' component={d4.Page11C_4} />
                 <Route exact path='/dystopia/12C' component={d4.Page12C} />
 
                 <Route path='/' component={ErrorPage} />
