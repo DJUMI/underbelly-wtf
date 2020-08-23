@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 
 const Page3C_5 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia3C.jpg';
@@ -25,13 +24,7 @@ const Page3C_5 = () => {
     );
 
     const renderButton = () => (
-        <div className='p2C__svg__container--enter'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/dystopia/4C'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='entrance' link='/dystopia/4C' top='75vh' left='73vw' width='20vw'/>
     );
 
     return (

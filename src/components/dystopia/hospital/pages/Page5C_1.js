@@ -12,7 +12,7 @@ const Page5C_1 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Receptionist', message: 'Welcome to the blessed Hospital District, here, all lives matter. We proudly treat every resident with their own private, live-in doctor. We have been plague free for 17 days. Please stand still while we scan you.' }
+                    { speaker: 'Receptionist', message: 'Welcome to the blessed Hospital District. Here, all lives matter. We proudly treat every resident with their own private, live-in doctor. We have been plague free for 17 days. Please stand still while we scan you.' }
                 ]}
                 responses={[
                     { link: '/dystopia/5C_2', message: '"Ok…?"' },

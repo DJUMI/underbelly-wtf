@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 
 const Page4B = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia4B.jpg';
@@ -16,13 +15,7 @@ const Page4B = () => {
                     { link: '/dystopia/5B', message: '“Ope, Sorry”' }
                 ]}
             />
-            <div className='p4B__svg__container'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/dystopia/4B_1'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
+            <LinkButton title='gun' link='/dystopia/4B_1' color='red' top='60vh' left='70vw' width='10vw'/>
         </div>
     );
 };

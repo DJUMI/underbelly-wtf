@@ -1,3 +1,4 @@
+/* globals */
 $font-stack: Helvetica, sans-serif;
 $primary-color: #ff0000;
 $secondary-color: #1b998a;
@@ -9,6 +10,7 @@ $text-dystopia-name: #800000;
 $text-utopia: #042f66;
 $text-utopia-name: #800000;
 
+/* resets */
 * {
   box-sizing: border-box;
 }
@@ -24,12 +26,26 @@ p {
   margin-bottom: 0;
 }
 
+.text__link {
+  text-decoration: none;
+}
+
+/* page */
 .page {
   height: 100%;
   background-color: black;
   z-index: -1;
 }
 
+.page__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* modal */
 .modal__container {
   height: 100%;
   background-color: black;
@@ -44,49 +60,7 @@ p {
   width: 100%;
 }
 
-//transitions
-
-.page--transition {
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.page--transition.active {
-  opacity: 1;
-}
-
-.page--slow {
-  height: 100%;
-  opacity: 0;
-  transition: opacity 4s ease-in-out 2s;
-}
-
-.page--slow.active {
-  opacity: 1;
-}
-.page--mono {
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-
-.page--mono.active {
-  opacity: 1;
-}
-
-.page__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.text__link {
-  text-decoration: none;
-}
-
+/* clickable */
 .clickable:hover {
   background-color: $primary-color;
   opacity: 0.25;
@@ -101,6 +75,7 @@ p {
   fill-opacity: 0.25;
 }
 
+/* svg */
 .svg__container--back {
   display: inline-block;
   position: absolute;
@@ -108,17 +83,6 @@ p {
   left: 0vw;
   height: 50vh;
   width: 20vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.svg__container--map {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  left: 0vw;
-  height: 18vh;
-  width: 21vw;
   vertical-align: middle;
   overflow: hidden;
 }
@@ -132,7 +96,25 @@ p {
   width: 100%;
 }
 
-//Dialogue
+/* Button */
+.button__svg--box {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.button__svg {
+  //fill-opacity: 0;
+}
+
+.button__svg:hover {
+  fill-opacity: 1;
+}
+
+/* Dialogue */
 
 .dialogue {
   position: absolute;
@@ -717,28 +699,6 @@ p {
 
 /**************** Dystopia Start ******************/
 
-.d-start__svg__container--comp {
-  display: inline-block;
-  position: absolute;
-  top: 58vh;
-  left: 58vw;
-  height: 14.5vh;
-  width: 5.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.d-start__svg__container--fence {
-  display: inline-block;
-  position: absolute;
-  top: 36vh;
-  left: 72vw;
-  height: 11vh;
-  width: 5.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 .dystopia__button--exit {
   position: absolute;
   top: 90.2vh;
@@ -757,286 +717,7 @@ p {
   width: 27vw;
 }
 
-.p4A__svg__container {
-  display: inline-block;
-  position: absolute;
-  top: 56vh;
-  left: 24.5vw;
-  height: 15vh;
-  width: 16.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p4A_1__svg__container {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  left: 34.5vw;
-  height: 32vh;
-  width: 33vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p5A__svg__container {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  left: 32vw;
-  height: 86vh;
-  width: 29vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.map__svg__container--clinic {
-  display: inline-block;
-  position: absolute;
-  top: 63vh;
-  left: 39vw;
-  height: 9vh;
-  width: 17vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.map__svg__container--market {
-  display: inline-block;
-  position: absolute;
-  top: 43vh;
-  left: 39vw;
-  height: 20vh;
-  width: 17vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.map__svg__container--cinema {
-  display: inline-block;
-  position: absolute;
-  top: 55vh;
-  left: 56vw;
-  height: 17vh;
-  width: 15vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.map__svg__container--apartment {
-  display: inline-block;
-  position: absolute;
-  top: 18vh;
-  left: 58vw;
-  height: 12vh;
-  width: 7vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p9A__svg__container--sign {
-  display: inline-block;
-  position: absolute;
-  top: 47vh;
-  left: 37vw;
-  height: 23vh;
-  width: 8vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p9A__svg__container--poster {
-  display: inline-block;
-  position: absolute;
-  top: 36vh;
-  left: 90vw;
-  height: 15vh;
-  width: 7vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p12A__svg__container {
-  display: inline-block;
-  position: absolute;
-  top: 18vh;
-  left: 40vw;
-  height: 31vh;
-  width: 3vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p13A__svg__container--ipod {
-  display: inline-block;
-  position: absolute;
-  top: 85.5vh;
-  left: 73vw;
-  height: 3vh;
-  width: 4vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-//overgrowth chapter
-
-.p1B__svg__container--house {
-  display: inline-block;
-  position: absolute;
-  top: 26vh;
-  left: 43vw;
-  height: 28vh;
-  width: 5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p1B__svg__container--car {
-  display: inline-block;
-  position: absolute;
-  top: 17.5vh;
-  left: 64vw;
-  height: 36vh;
-  width: 23vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p1B__svg__container--sign {
-  display: inline-block;
-  position: absolute;
-  top: 15vh;
-  left: 84vw;
-  height: 11vh;
-  width: 8.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p2B__svg__container--newspaper {
-  display: inline-block;
-  position: absolute;
-  top: 61vh;
-  left: 20vw;
-  height: 38vh;
-  width: 36vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p2B__svg__container--masks {
-  display: inline-block;
-  position: absolute;
-  top: 42vh;
-  left: 56vw;
-  height: 15vh;
-  width: 12vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p2B__svg__container--flier {
-  display: inline-block;
-  position: absolute;
-  top: 25vh;
-  left: 54.5vw;
-  height: 14vh;
-  width: 8.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p3B__svg__container--door {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  left: 34vw;
-  height: 90vh;
-  width: 30vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p3B_1__svg__container--knob {
-  display: inline-block;
-  position: absolute;
-  top: 80vh;
-  left: 59vw;
-  height: 8vh;
-  width: 4vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p4B__svg__container {
-  display: inline-block;
-  position: absolute;
-  top: 62.5vh;
-  left: 72vw;
-  height: 10.5vh;
-  width: 6vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-//hospital chapter
-
-.p1C__svg__container--guards {
-  display: inline-block;
-  position: absolute;
-  top: 37vh;
-  left: 79.5vw;
-  height: 22vh;
-  width: 5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p2C__svg__container--guards {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  left: 5vw;
-  height: 100vh;
-  width: 69vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p2C__svg__container--enter {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  right: 0vw;
-  height: 24vh;
-  width: 27vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.p4C__svg__container {
-  display: inline-block;
-  position: absolute;
-  top: 18vh;
-  left: 38vw;
-  height: 41vh;
-  width: 21.5vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 //sick district chapter
-
-.p9C__svg__container {
-  display: inline-block;
-  position: absolute;
-  top: 0vh;
-  left: 28vw;
-  height: 100vh;
-  width: 46vw;
-  vertical-align: middle;
-  overflow: hidden;
-}
 
 .p10C__svg__container {
   display: inline-block;
@@ -1108,4 +789,35 @@ p {
   -moz-animation: fadeIn ease 4s;
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;
+}
+
+//transitions
+
+.page--transition {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.page--transition.active {
+  opacity: 1;
+}
+
+.page--slow {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 4s ease-in-out 2s;
+}
+
+.page--slow.active {
+  opacity: 1;
+}
+.page--mono {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.page--mono.active {
+  opacity: 1;
 }
