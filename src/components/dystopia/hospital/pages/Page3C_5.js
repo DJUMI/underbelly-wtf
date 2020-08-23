@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 
 const Page3C_5 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia3C.jpg';
@@ -12,18 +11,17 @@ const Page3C_5 = () => {
     useEffect(() => {
         setTimeout(() => {
             setToggle(2);
-        }, 4000);
+        }, 5000);
     }, []);
 
     const renderFooter = () => (
-        <div className='page__footer--dystopia'>
-            <Typed
-                className='dystopia__text'
-                strings={['"…Are you f*cking stupid? Get out of here, I’m done answering questions."']}
-                typeSpeed={t.typeSpeedFast}
-                showCursor={false}
-            />
-        </div>
+        <Dialogue
+            theme='dystopia'
+            bottom
+            messages={[
+                { speaker: 'HDS Guard "Moore"', message: '…Are you f*cking stupid? Get out of here, I’m done answering questions.' }
+            ]}
+        />
     );
 
     const renderButton = () => (

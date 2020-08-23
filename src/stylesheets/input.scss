@@ -252,8 +252,7 @@ body,
   position: absolute;
   top: 5vh;
   left: 15vw;
-  min-width: 50%;
-  max-width: 70%;
+  width: 70%;
   border-radius: 10px;
   background-color: $text-background-dystopia;
   padding: 10px;
@@ -263,8 +262,7 @@ body,
   position: absolute;
   bottom: 5vh;
   left: 15vw;
-  min-width: 50%;
-  max-width: 70%;
+  width: 70%;
   border-radius: 10px;
   background-color: $text-background-dystopia;
   padding: 10px;

@@ -20,7 +20,7 @@ const Dialogue = ({ theme, bottom, button, buttonLink, messages, responses }) =>
     }
 
     const [showButton, setShowButton] = useState(false);
-    const [showResponse, setShowResponse] = useState(false);
+    const [showResponse, setShowResponse] = useState(messages.length ? false : true);
 
     const renderMessages = () => (
         <>
@@ -34,7 +34,7 @@ const Dialogue = ({ theme, bottom, button, buttonLink, messages, responses }) =>
                             typeSpeed={t.typeSpeed}
                             showCursor={false}
                             startDelay={1000}
-                            onComplete={() => setTimeout(() => { 
+                            onComplete={() => setTimeout(() => {
                                 setShowResponse(true);
                                 if (button) {
                                     setShowButton(true);
@@ -81,5 +81,6 @@ Dialogue.defaultProps = {
     bottom: false,
     button: false,
     buttonLink: '',
+    messages: [],
     responses: []
 };

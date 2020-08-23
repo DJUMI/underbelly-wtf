@@ -10,8 +10,7 @@ const Page3C_1 = () => {
             <img className='page__image' src={bg} alt='Two armed guards stand near a hospital entrance' />
             <Dialogue 
                 theme='dystopia'
-                bottom={true}
-                button={false}
+                bottom
                 messages={[
                     { speaker: 'HDS Guard "Moore"', message: 'State your purpose.' }
                 ]}

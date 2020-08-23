@@ -8,11 +8,11 @@ import bg2 from '../../../../assets/images/utopia/co_op/11C_UTOPIA.jpg'
 import bg3 from '../../../../assets/images/landing/end.png'
 
 const Page10C = () => {
-    const [activePanel, setActivePanel] = useState(3);
+    const [activePanel, setActivePanel] = useState(1);
 
     useEffect(() => {
         setTimeout(() => {
-            setActivePanel(3);
+            setActivePanel(2);
         }, 20000);
 
         setTimeout(() => {
