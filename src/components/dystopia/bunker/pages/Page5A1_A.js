@@ -14,7 +14,7 @@ const Page5A1_A = () => {
                 button={true}
                 buttonLink='/dystopia/5A1_B'
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'There is a Sick District that is easy enough to get to from here. It’s obviously not ideal, but we have to focus on the current residents in the District and right now the clinics are all full with non-COVID cases.' }
+                    { speaker: 'Doctor', message: 'There is a Sick District that is easy enough to get to from here. It’s obviously not ideal, but we have to focus on the current residents in the District and right now the clinics are all full with non-COVID cases.' }
                 ]}
             />
         </div>

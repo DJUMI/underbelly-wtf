@@ -12,7 +12,7 @@ const Page5C_4 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Receptionist', message: 'It’s good you are healthy, but unfortunately you cannot live in this coveted Hospital District. You can, however, afford to pay for Medical Training. Well done, you!' }
+                    { speaker: 'Receptionist', message: 'It’s good you are healthy, child, but unfortunately you are not Blessed. You can, however, afford to pay for Medical Training and stay in our beautiful Utopia. Well done, you!' }
                 ]}
                 responses={[
                     { link: '/dystopia/5C_5', message: '"What does that mean?"' },

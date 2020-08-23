@@ -12,7 +12,7 @@ const Page5A2 = () => {
                 theme='dystopia'
                 bottom={true}
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Fear, mostly. We would rather not take that unknown risk, it’s guaranteed safe here—so long as we keep COVID out of or District. Hopefully that answers your questions. Let’s move on with the exam. Do you consent?' }
+                    { speaker: 'Doctor', message: 'Fear, mostly. We would rather not take that unknown risk, it’s guaranteed safe here—so long as we keep COVID out of or District. Hopefully that answers your questions. Let’s move on with the exam. Do you consent?' }
                 ]}
                 responses={[
                     { link: '/dystopia/6A', message: '“Yes, thank you.”' },

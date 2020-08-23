@@ -19,7 +19,7 @@ const Page3C_5 = () => {
             theme='dystopia'
             bottom
             messages={[
-                { speaker: 'HDS Guard "Moore"', message: '…Are you f*cking stupid? Get out of here, I’m done answering questions.' }
+                { speaker: 'HDS Guard "Moore"', message: 'Why are you still standing here? Move on and f*ck off.' }
             ]}
         />
     );

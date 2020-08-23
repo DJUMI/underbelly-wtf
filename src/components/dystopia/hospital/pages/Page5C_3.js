@@ -16,7 +16,7 @@ const Page5C_3 = () => {
                 fast
                 buttonLink='/dystopia/9C'
                 messages={[
-                    { speaker: 'Receptionist', message: 'Police! Please escort this heathen out of this office. Maybe it would be worth dropping them off at the Sick District, since they’ll probably end up there eventually anyway.' }
+                    { speaker: 'Receptionist', message: 'Guards! Please escort this heathen out of this office. Maybe it would be worth dropping them off at the Sick District, since they’ll probably end up there eventually anyway.' }
                 ]}
             />
         </div>

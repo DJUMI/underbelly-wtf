@@ -14,7 +14,7 @@ const Page6A = () => {
                 button
                 buttonLink='/dystopia/7A'
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Great, because we actually have been scanning your vitals since you walked in. You’re clean, although you could probably stand to floss your teeth  a little more.' }
+                    { speaker: 'Doctor', message: 'Great, because we actually have been scanning your vitals since you walked in. You’re clean, although you could probably stand to floss your teeth  a little more.' }
                 ]}
             />
         </div>

@@ -15,7 +15,7 @@ const Page3C_1 = () => {
                     { speaker: 'HDS Guard "Moore"', message: 'State your purpose.' }
                 ]}
                 responses={[
-                    { link: '/dystopia/3C_2', message: '"Is this the entrance to the Hospital?"' }
+                    { link: '/dystopia/3C_2', message: '"Umm… I’m looking for the Hospital District."' }
                 ]}
             />
         </div>

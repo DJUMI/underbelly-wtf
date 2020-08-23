@@ -14,8 +14,8 @@ const Page6B_2 = () => {
                 button
                 buttonLink='/dystopia/6B_3'
                 messages={[
-                    { speaker: 'Speaker1', message: 'Looks like you could use a rest, I would go to the Bunker District, back through the hole in the fence. They could use more scavengers if you’d like a job, too?' },
-                    { speaker: 'Speaker2', message: 'Yeah, we got the East Side handled. The Monona Bunker could definitely use more hands, what with the Landfill out there.' }
+                    { speaker: 'Person 1', message: 'You look like you could use some rest. I’d go talk to someone in the Bunker District, they probably have an open cot. You should have passed it on your way here.' },
+                    { speaker: 'Person 2', message: 'Yeah, I heard they transferred a few residents to the Sick District this morning. Poor folk.' }
                 ]}
             />
         </div>

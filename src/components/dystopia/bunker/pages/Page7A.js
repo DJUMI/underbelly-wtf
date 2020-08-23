@@ -14,8 +14,8 @@ const Page7A = () => {
                 button
                 buttonLink='/dystopia/8A'
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'This paper has a map of the District, the number of an available apartment that you can use while you live here, and my stamp of clean health. Keep this on you at all times, you will be asked to show it at random health checkpoints.' },
-                    { speaker: 'HDS Guard "Moore"', message: 'Welcome to the East Side Bunker District!' }
+                    { speaker: 'Doctor', message: 'This paper has a map of the District, the number of an available apartment that you can use while you live here, and my stamp of clean health. Keep this on you at all times, you will be asked to show it at random health checkpoints.' },
+                    { speaker: '', message: 'Welcome to the East Side Bunker District!' }
                 ]}
             />
         </div>

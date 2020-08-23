@@ -12,10 +12,10 @@ const Page3C_3 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Have you been living under a f*cking rock? The military was disbanded years ago, when the country had to shut down because of The Second Wave. I used to be a f*cking Marine before this sh*t. I’m Police, now. Hoo rah…' }
+                    { speaker: 'HDS Guard "Moore"', message: 'Have you been living under a f*cking rock? Without us, the district would erupt in chaos. People would be trying to break-in every other day. It’s our duty to keep the blessed protected.' }
                 ]}
                 responses={[
-                    { link: '/dystopia/3C_4', message: '"Oh. Okay, if it’s a district does that mean this is a shelter?"' }
+                    { link: '/dystopia/3C_4', message: '"Oh. Okay, how do I get into the Hospital District?"' }
                 ]}
             />
         </div>

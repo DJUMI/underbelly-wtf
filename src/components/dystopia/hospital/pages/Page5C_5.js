@@ -12,11 +12,12 @@ const Page5C_5 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Receptionist', message: 'You learn how to treat the people who can afford to live here, which is really a blessing because you wouldn’t want to live in those vile bunkers. Instead, we give you a modest room in a resident’s apartment — after they’ve bought you, of course — and then you are one of the lucky ones who gets to care for these truly Lucky souls.' }
+                    { speaker: 'Receptionist', message: 'We will train you on how to treat the people who can afford to live here, those who are truly blessed.  Once a resident purchases you - we can’t let this be a free-ride of course - you will be given a modest room in their apartment.' },
+                    { speaker: '', message: 'Then you are one of the lucky ones who gets to care for these truly Blessed souls. Praise be.' }
                 ]}
                 responses={[
-                    { link: '/dystopia/6C', message: '"Okay, that doesn’t sound creepy at all. Count me in!"' },
-                    { link: '/dystopia/5C_6', message: '"Sorry, did you say they ‘buy’ me? That sounds like a nightmare, I’d like to leave."' }
+                    { link: '/dystopia/6C', message: '"Um… I suppose. That sounds better than being sent to the Sick District."' },
+                    { link: '/dystopia/5C_6', message: '"I’m sorry, did you say they ‘purchase’ me? Do people actually say yes to that? I think I’m going to see myself out."' }
                 ]}
             />
         </div>

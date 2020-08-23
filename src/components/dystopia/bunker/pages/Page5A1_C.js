@@ -12,7 +12,7 @@ const Page5A1_C = () => {
                 theme='dystopia'
                 bottom={true}
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'We rely on recycled air, so if someone has COVID, it’s highly likely that the entire District will get it and wipe out that population. The virus, from our shared observation, mutated last year and has become a complete death sentence.' }
+                    { speaker: 'Doctor', message: 'We rely on recycled air, so if someone has COVID, it’s highly likely that the entire District will get it and wipe out that population. The virus, from our shared observation, mutated last year and has become a complete death sentence.' }
                 ]}
                 responses={[
                     { link: '/dystopia/5A2', message: '“No cases? It almost seems more risky to stay in Districts…why not go back into the world so that you’re more spread out?”' },

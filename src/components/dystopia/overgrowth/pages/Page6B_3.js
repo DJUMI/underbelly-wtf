@@ -12,8 +12,8 @@ const Page6B_3 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Speaker2', message: 'Before you go, though…since you seem new around here…' },
-                    { speaker: 'Speaker1', message: 'Avoid the Hospital District. They’ve built a bit of a ‘Utopia’ there. You can’t trust them, it’s all doublespeak.' }
+                    { speaker: 'Person 2', message: 'Heads up since you seem new to this area, avoid the Hospital District if you can.' },
+                    { speaker: 'Person 1', message: 'They’ve built what they refer to as a ‘Utopia’ over there. It’s freaky if you ask me. It’s all doublespeak and alternative facts.' }
                 ]}
                 responses={[
                     { link: '/dystopia/1B', message: '"Thanks for the heads up! And sorry for interrupting your scavenging."'}

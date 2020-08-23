@@ -14,7 +14,7 @@ const Page3A = () => {
                 bottom={false}
                 button={false}
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'I see. In that case, we will open the bunker doors for you. Once you enter, you will be required to undergo a brief health evaluation. Please proceed down the stairs to the Medic Chamber.' }
+                    { speaker: 'Receptionist', message: 'This is the East Side Bunker District. We do have several cots available for those uninfected. I can open the doors for you where you will be greeted by one of our medics.' }
                 ]}
                 responses={[
                     { link: '/dystopia/4A', message: '"Thank you...?"' }

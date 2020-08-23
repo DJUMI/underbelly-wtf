@@ -14,8 +14,8 @@ const Page6B_1 = () => {
                 button
                 buttonLink='/dystopia/6B_2'
                 messages={[
-                    { speaker: 'Speaker1', message: 'We’re scavenging. We’re scavengers.' },
-                    { speaker: 'Speaker2', message: 'I guess it’s not really super public yet, but the Bunker District finally has some ventilation for melting down old metals from this B.C. world so we can make more bed frames for the Clinics and stuff.' }
+                    { speaker: 'Person 1', message: 'We’re Bunker scavengers, we’re looking for scrap metal. You’d be surprised what people have just left .' },
+                    { speaker: 'Person 2', message: 'The Bunker District melts down the scraps we find to make more beds for the Clinics and stuff.' }
                 ]}
             />
         </div>

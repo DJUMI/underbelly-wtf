@@ -12,10 +12,10 @@ const Page2A = () => {
             <Dialogue 
                 theme='dystopia'
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Welcome to the East Side District. Unfortunately, our clinic is currently full and not taking new patients.' }
+                    { speaker: 'Receptionist', message: 'Welcome to the East Side District. Unfortunately, our clinic is currently full and we are unable to take any new patients.' }
                 ]}
                 responses={[
-                    { link: '/dystopia/3A', message: '"I\'m not looking for a clinic. I\'m just a little confused..."' }
+                    { link: '/dystopia/3A', message: '"I\'m not looking for a clinic. I\'m just a bit confused. Where am I?"' }
                 ]}
             />
             <Link to='/dystopia'>

@@ -13,7 +13,7 @@ const Page5A_A = () => {
                 bottom={true}
                 button={false}
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Hello, welcome to the East Side Bunker District. I need to do a preliminary health screening. Please know, if you exhibit any symptoms, you will be turned away for the safety of the Bunker residents. Do you consent?' }
+                    { speaker: 'Doctor', message: 'Hello, welcome to the East Side Bunker District. I need to do a preliminary health screening. Please know, if you exhibit any symptoms, you will be turned away for the safety of the Bunker residents. Do you consent?' }
                 ]}
                 responses={[
                     { link: '/dystopia/5A1_A', message: '“What happens to the sick people who are turned away?”' },

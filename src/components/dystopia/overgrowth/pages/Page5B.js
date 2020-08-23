@@ -12,11 +12,11 @@ const Page5B = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Speaker2', message: 'Are you trying to poach on our finds?' },
-                    { speaker: 'Speaker1', message: 'Because we’re working for the Bunker District, we’re not ‘looting’—f*ck the Hospital District for villainizing us.' }
+                    { speaker: 'Person 2', message: 'Who the f*ck are you?' },
+                    { speaker: 'Person 1', message: 'Did the Hospital District send you? Because we’re authorized to be here by the Bunker District.' }
                 ]}
                 responses={[
-                    { link: '/dystopia/6B_1', message: '"Can you start from the beginning? I have no idea what’s going on…"' }
+                    { link: '/dystopia/6B_1', message: '"I’m sorry, I don’t think I’m supposed to be here. I have no idea what is going on."' }
                 ]}
             />
         </div>
