@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/8C_UTOPIA.jpg'
 
 const Page8C = () => {
-    const [showButton, setShowButton] = useState(false);
+    const [showButton, setShowButton] = useState(true);
 
     const renderButton = () => (
         <div className='p8C__svg__container'>
@@ -21,15 +20,13 @@ const Page8C = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Two people sitting in a room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Well we were just having one of our weekly meetings. We’re about done. Could you actually go to the garden and grab a tomato? We’re about to make pasta for dinner!"']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    onComplete={() => setTimeout(() => { setShowButton(true) }, 1000)}
-                />
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Housemate', message: 'That was kind of the purpose of the Giant Purge, to forget. Ha Ha.' },
+                    { speaker: '', message: 'But we were just finishing up our flatmate meeting which we’ll forgive you for missing this time. But could you go out to the garden to grab us a tomato? Friend here is going to make us pasta for dinner!' }
+                ]}
+            />
             {showButton ? renderButton() : null}
         </div>
     );

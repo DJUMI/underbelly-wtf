@@ -1,37 +1,24 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
+import React from 'react';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
+
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 
 const Page2HD = () => {
-    const [showResponse, setShowResponse] = useState(false);
-
-    const renderResponse = () => (
-        <div className='fade-in'>
-            <Link className='text__link' to='/utopia/2H1_4'>
-                <p className='utopia__text--clickable'>> "Uh, yeah!"</p>
-            </Link>
-            <Link className='text__link' to='/utopia/3H'>
-                <p className='utopia__text--clickable'>> "I think I'm okay, thanks!"</p>
-            </Link>
-        </div>
-    );
-
+   
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Nurse in Hospital Room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Right? So, in cases of direct impact injuries, patients\' memories are foggy, so we remove them to relieve the patient of the experience and give them the option to view the memory for complete transparency. Would you like to view your memory?"']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    onComplete={() => setTimeout(() => {setShowResponse(true)}, 1000)}
-                />
-                {showResponse ? renderResponse() : <p className='utopia__text--blank'>></p>}
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'Oh! Silly me. In cases of trauma or direct injuries, we are able to remove the memories from patients to help alleviate their pain. They can then choose to watch the memory in our MRS, or Memory Recovery System, as a viewer versus a participant to learn from that memory. Many patients choose to then discard their memory forever. Would you like to view your memory?' },
+                ]}
+                responses={[
+                    { link: '/utopia/2H1_4', message: '"Yes, please."' },
+                    { link: '/utopia/3H', message: '"I think I\'m okay, thanks!"' }
+                ]}
+            />
         </div>
     );
 };

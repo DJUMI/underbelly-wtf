@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg10 from '../../../../assets/images/utopia/hospital/2H10_UTOPIA.jpg'
 import bg11 from '../../../../assets/images/utopia/hospital/2H11_UTOPIA.jpg'
 import bg12 from '../../../../assets/images/utopia/hospital/2H12_UTOPIA.jpg'
@@ -13,7 +11,6 @@ import bg14 from '../../../../assets/images/utopia/hospital/2H14_UTOPIA.jpg'
 
 const Page2H10_14 = () => {
     const [activePanel, setActivePanel] = useState(10);
-    const [showResponse, setShowResponse] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -36,25 +33,13 @@ const Page2H10_14 = () => {
     const render2H10 = () => (
         <div className={`page--transition ${activePanel === 10 ? 'active' : ''}`}>
             <img className='page__image' src={bg10} alt='Two people staring down at you from above' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Oh shit! Dude you hit this person right on their head with the ball."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                />
-                <br></br>
-                <br></br>
-                <div className='right-align'>
-                    <Typed
-                        className='utopia__text--speaker2'
-                        strings={['"Let\'s wait here until the ambulance arrives. Their companion is already contacting the ambulance."']}
-                        typeSpeed={t.typeSpeed}
-                        showCursor={false}
-                        startDelay={5000}
-                    />
-                </div>
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Person 1', message: 'Oh gosh! Are you okay, friend? Can you hear us? Stay calm, you were hit pretty hard by our ball.' },
+                    { speaker: 'Person 2', message: 'Your companion has already contacted the ambulance, friend. We’ll wait with you until they arrive.' },
+                ]}
+            />
         </div>
     );
 
@@ -67,26 +52,14 @@ const Page2H10_14 = () => {
     const render2H12 = () => (
         <div className={`page--transition ${activePanel === 12 ? 'active' : ''}`}>
             <img className='page__image' src={bg12} alt='Two people conversing above' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Remember when ambulances used to cost money?"']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    startDelay={24000}
-                />
-                <br></br>
-                <br></br>
-                <div className='right-align'>
-                    <Typed
-                        className='utopia__text--speaker2'
-                        strings={['"Yeah what the hell was that?? I\'m glad the United Nations got rid of currency."']}
-                        typeSpeed={t.typeSpeed}
-                        showCursor={false}
-                        startDelay={28000}
-                    />
-                </div>
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Person 1', message: 'Did you know that ambulances used to cost money?' },
+                    { speaker: 'Person 2', message: 'I thought that was a rumor? Why would they charge you for an accident you didn’t cause? And who would pay?' },
+                    { speaker: 'Person 1', message: 'I’m not sure but I think heard it on a podcast or something.'}
+                ]}
+            />
         </div>
     );
 
@@ -102,28 +75,17 @@ const Page2H10_14 = () => {
     const render2H14 = () => (
         <div className={`page--transition ${activePanel === 14 ? 'active' : ''}`}>
             <img className='page__image' src={bg14} alt='Nurse popping head into room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Still going or done?"']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    startDelay={45000}
-                    onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
-                />
-                {showResponse ? renderResponse() : <p className='utopia__text--blank'>></p>}
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'Still going or all done?' }
+                ]}
+                responses={[
+                    { link: '/utopia/2H15', message: '"It\'s done!"'}
+                ]}
+            />
         </div>
     );
-
-    const renderResponse = () => (
-        <div className='fade-in'>
-            <Link className='text__link' to='/utopia/2H15'>
-                <p className='utopia__text--clickable'>> "It's done!"</p>
-            </Link>
-        </div>
-    );
-
 
     return (
         <div className='page'>

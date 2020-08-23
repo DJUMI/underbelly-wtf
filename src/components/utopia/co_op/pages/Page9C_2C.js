@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/9C2_UTOPIA.jpg'
 
 const Page9C_2C = () => {
-    const [showButton, setShowButton] = useState(false);
+    const [showButton, setShowButton] = useState(true);
 
     const renderButton = () => (
         <div className='svg__container--back'>
@@ -21,16 +20,13 @@ const Page9C_2C = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Hallway' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"One pasta sauce coming right up!"']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    onComplete={() => setTimeout(() => { setShowButton(true) }, 1000)}
-                />
-            </div>
-            {showButton ? renderButton() : <p className='utopia__text--blank'>></p>}
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Robot', message: 'One pasta sauce coming right up!' }
+                ]}
+            />
+            {renderButton()}
         </div>
     );
 };

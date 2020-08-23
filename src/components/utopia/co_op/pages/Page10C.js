@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg1 from '../../../../assets/images/utopia/co_op/10C_UTOPIA.jpg'
 import bg2 from '../../../../assets/images/utopia/co_op/11C_UTOPIA.jpg'
 import bg3 from '../../../../assets/images/landing/end.png'
@@ -13,35 +12,23 @@ const Page10C = () => {
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(2);
-        }, 20000);
+        }, 10000);
 
         setTimeout(() => {
             setActivePanel(3);
-        }, 30000);
+        }, 20000);
     }, []);
 
     const render10C = () => (
         <div className={`page--transition ${activePanel === 1 ? 'active' : ''}`}>
             <img className='page__image' src={bg1} alt='Hospital room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"I don’t think they’re going to wake up. It’s the 5 year mark for coma patients so we have to transfer them to Choose Your Time."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                />
-                <br></br>
-                <br></br>
-                <div className='right-align'>
-                    <Typed
-                        className='utopia__text--speaker2'
-                        strings={['"I’ll call them right now. Their ID says they’re a donor and approve Tree Transformation."']}
-                        typeSpeed={t.typeSpeed}
-                        showCursor={false}
-                        startDelay={8000}
-                    />
-                </div>
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'We knew this was going to be a risk of the Giant Purge. It’s still better for the collective.' },
+                    { speaker: 'Doctor', message: 'I know friend. I’ll call them right now. Their ID says they’re approved to be a donor and a candidate for Tree Transformation' }
+                ]}
+            />
         </div>
     );
 

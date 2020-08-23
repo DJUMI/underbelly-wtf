@@ -3,12 +3,14 @@ $primary-color: #ff0000;
 $secondary-color: #1b998a;
 $primary-color-light: #392347;
 $secondary-color-dark: #18897c;
-$text-background: rgba(0, 0, 0, 0.5);
-$text-background-dystopia: rgba(255, 255, 255, 0.75);
+$text-background: rgba(255, 255, 255, 0.75);
+//on the chopping block
 $text-background-utopia: rgba(255, 255, 255, 0.5);
+
 $text-dystopia: black;
 $text-dystopia-name: #800000;
 $text-utopia: #042f66;
+$text-utopia-name: #800000;
 
 * {
   box-sizing: border-box;
@@ -80,33 +82,6 @@ body,
   width: 100%;
 }
 
-.page__header--dystopia {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: $text-background-utopia;
-  padding: 10px;
-}
-
-.page__header--screen {
-  position: absolute;
-  top: 5vh;
-  left: 13vw;
-  width: 74vw;
-  background-color: $text-background-utopia;
-  padding: 10px;
-}
-
-.page__footer--dystopia {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: $text-background-utopia;
-  padding: 10px;
-}
-
 .page__header--utopia {
   position: absolute;
   top: 0;
@@ -128,32 +103,6 @@ body,
 
 .text__link {
   text-decoration: none;
-}
-
-.dystopia__text {
-  color: $text-utopia;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.dystopia__text--speaker2 {
-  color: $text-utopia;
-  font-size: large;
-  font-weight: bold;
-  text-align: end;
-  font-family: "calibri";
-}
-
-.dystopia__text--clickable {
-  color: $text-utopia;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.dystopia__text--clickable:hover {
-  color: $primary-color;
 }
 
 .utopia__text {
@@ -248,24 +197,34 @@ body,
 
 //Dialogue
 
-.dialogue--dystopia {
+.dialogue {
   position: absolute;
   top: 5vh;
   left: 15vw;
   width: 70%;
   border-radius: 10px;
-  background-color: $text-background-dystopia;
+  background-color: $text-background;
   padding: 10px;
 }
 
-.dialogue--dystopia--bottom {
+.dialogue--bottom {
   position: absolute;
   bottom: 5vh;
   left: 15vw;
   width: 70%;
   border-radius: 10px;
-  background-color: $text-background-dystopia;
+  background-color: $text-background;
   padding: 10px;
+}
+
+.dialogue__container--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dialogue__icon--dystopia {
+  width: 10vw;
 }
 
 .dialogue__text--dystopia {
@@ -293,34 +252,30 @@ body,
   color: $primary-color;
 }
 
-.dialogue__container--icon {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.dialogue__text--utopia {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
 }
 
-.dialogue__icon--dystopia {
-  width: 10vw;
+.dialogue__text--utopia--name {
+  color: $text-utopia-name;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
 }
 
-
-
-
-
-
-
-
-
-.page__header--screen {
-  position: absolute;
-  top: 5vh;
-  left: 13vw;
-  width: 74vw;
-  background-color: $text-background-utopia;
-  padding: 10px;
+.dialogue__text--utopia--clickable {
+  color: $text-utopia;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
 }
 
-
+.dialogue__text--utopia--clickable:hover {
+  color: $primary-color;
+}
 
 //Landing
 

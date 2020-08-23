@@ -67,33 +67,6 @@ body,
   width: 100%;
 }
 
-.page__header--dystopia {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-}
-
-.page__header--screen {
-  position: absolute;
-  top: 5vh;
-  left: 13vw;
-  width: 74vw;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-}
-
-.page__footer--dystopia {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-}
-
 .page__header--utopia {
   position: absolute;
   top: 0;
@@ -115,32 +88,6 @@ body,
 
 .text__link {
   text-decoration: none;
-}
-
-.dystopia__text {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.dystopia__text--speaker2 {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  text-align: end;
-  font-family: "calibri";
-}
-
-.dystopia__text--clickable {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.dystopia__text--clickable:hover {
-  color: #ff0000;
 }
 
 .utopia__text {
@@ -233,7 +180,7 @@ body,
   width: 100%;
 }
 
-.dialogue--dystopia {
+.dialogue {
   position: absolute;
   top: 5vh;
   left: 15vw;
@@ -243,7 +190,7 @@ body,
   padding: 10px;
 }
 
-.dialogue--dystopia--bottom {
+.dialogue--bottom {
   position: absolute;
   bottom: 5vh;
   left: 15vw;
@@ -251,6 +198,16 @@ body,
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 10px;
+}
+
+.dialogue__container--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dialogue__icon--dystopia {
+  width: 10vw;
 }
 
 .dialogue__text--dystopia {
@@ -278,23 +235,29 @@ body,
   color: #ff0000;
 }
 
-.dialogue__container--icon {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.dialogue__text--utopia {
+  color: #042f66;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
 }
 
-.dialogue__icon--dystopia {
-  width: 10vw;
+.dialogue__text--utopia--name {
+  color: #800000;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
 }
 
-.page__header--screen {
-  position: absolute;
-  top: 5vh;
-  left: 13vw;
-  width: 74vw;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+.dialogue__text--utopia--clickable {
+  color: #042f66;
+  font-size: large;
+  font-weight: bold;
+  font-family: "calibri";
+}
+
+.dialogue__text--utopia--clickable:hover {
+  color: #ff0000;
 }
 
 .LP1__button {

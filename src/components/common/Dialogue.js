@@ -67,7 +67,7 @@ const Dialogue = ({ theme, bottom, button, buttonLink, messages, responses }) =>
     );
 
     return (
-        <div className={`dialogue--${theme}${position}`}>
+        <div className={`dialogue${position}`}>
             {renderMessages()}
             {showResponse ? renderResponses() : null}
             {showButton ? renderButton() : null}

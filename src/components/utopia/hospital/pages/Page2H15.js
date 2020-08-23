@@ -1,37 +1,24 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
+import React from 'react';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
+
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 
 const Page2H15 = () => {
-    const [showResponse, setShowResponse] = useState(false);
-
-    const renderResponse = () => (
-        <div className='fade-in'>
-            <Link className='text__link' to='/utopia/2H16_20'>
-                <p className='utopia__text--clickable'>> "I'll have it reinserted."</p>
-            </Link>
-            <Link className='text__link' to='/utopia/3H'>
-                <p className='utopia__text--clickable'>> "I don't need it."</p>
-            </Link>
-        </div>
-    );
-
+ 
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Nurse in Hospital Room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Now, would you like it reinserted in your memories or do you want it permanently removed? You might experience some headaches when reinserted."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
-                />
-                {showResponse ? renderResponse() : <><p className='utopia__text--blank'>></p><p className='utopia__text--blank'>></p></>}
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'Now, would you like to reinsert your memories or would you like them discarded? I am obligated to tell you that you may experience headaches for a few days after reinsertion.' }
+                ]}
+                responses={[
+                    { link: '/utopia/2H16_20', message: '"I’ll have them reinserted, please."'},
+                    { link: '/utopia/3H', message: '"I don’t need them, I saw enough."'}
+                ]}
+            />
         </div>
     );
 };

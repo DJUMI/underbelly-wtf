@@ -1,34 +1,22 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
+import React from 'react';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/6C_UTOPIA_FACECHANGE.jpg'
 
 const Page6CB = () => {
-    const [showResponse, setShowResponse] = useState(false);
-
-    const renderResponse = () => (
-        <div className='fade-in'>
-            <Link className='text__link' to='/utopia/6CC'>
-                <p className='utopia__text--clickable'>> "I think I’m good! I lost the flowers I was picking though :("</p>
-            </Link>
-        </div>
-    );
 
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Two people sitting in a living room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Hey! How\'s your head? Our companions told us you got injured pretty bad."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    onComplete={() => setTimeout(() => { setShowResponse(true) }, 1000)}
-                />
-                {showResponse ? renderResponse() : <p className='utopia__text--blank'>></p>}
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Housemate', message: 'Hey, friend! How\s your head? Our companions told us you got injured pretty bad today and that you even went to the hospital. Is it really as beautiful and everyone says?' }
+                ]}
+                responses={[
+                    { link: '/utopia/6CC', message: '"I think I’m good. Everyone was really nice. But I still feel a little bit fuzzy. Have you ever had a memory removed before?"' }
+                ]}
+            />
         </div>
     );
 };

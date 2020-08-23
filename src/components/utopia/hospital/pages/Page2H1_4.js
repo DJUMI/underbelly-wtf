@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../../constants/text';
+import { Dialogue } from '../../../common';
 import bg1 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg2 from '../../../../assets/images/utopia/hospital/2H2_UTOPIA.jpg'
 import bg3 from '../../../../assets/images/utopia/hospital/2H3_UTOPIA.jpg'
@@ -28,14 +27,12 @@ const Page2H1_4 = () => {
     const render2H1 = () => (
         <div className={`page--transition ${activePanel === 1 ? 'active' : ''}`}>
             <img className='page__image' src={bg1} alt='Nurse in Hospital Room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Great! Let me set it up for you."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                />
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'Great! Let me set it up for you.' },
+                ]}
+            />
         </div>
     );
 
@@ -48,15 +45,12 @@ const Page2H1_4 = () => {
     const render2H3 = () => (
         <div className={`page--transition ${activePanel === 3 ? 'active' : ''}`}>
             <img className='page__image' src={bg3} alt='Nurse exiting the room' />
-            <div className='page__header--utopia'>
-                <Typed
-                    className='utopia__text'
-                    strings={['"Alright, I\'ll be right outside the room. Click start on the remote whenever you\'re ready."']}
-                    typeSpeed={t.typeSpeed}
-                    showCursor={false}
-                    startDelay={12000}
-                />
-            </div>
+            <Dialogue
+                theme='utopia'
+                messages={[
+                    { speaker: 'Nurse', message: 'Alright, I\'ll be right outside the door. Click start on the remote when you\'re ready.' },
+                ]}
+            />
         </div>
     );
 
