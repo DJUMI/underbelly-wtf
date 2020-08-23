@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
+import { LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/nature/2L1_UTOPIA.jpg'
 import bg_bubble from '../../../../assets/images/utopia/nature/2L1_UTOPIA_BUBBLE.jpg'
 
@@ -14,13 +14,7 @@ const Page2L_1 = () => {
     }, []);
 
     const renderButton = () => (
-        <div className='p2L_1__svg__container'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/2L_2'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='deer' link='/utopia/2L_2' top='29vh' left='41vw' width='20vw' />
     );
 
     return (

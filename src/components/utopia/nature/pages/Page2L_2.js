@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import bg from '../../../../assets/images/utopia/nature/2L2_UTOPIA.jpg'
 import bg_bubble from '../../../../assets/images/utopia/nature/2L2_UTOPIA_BUBBLE.jpg'
 
+//TODO: replace back button
 const Page2L_2 = () => {
     const [showBubble, setShowBubble] = useState(false);
     const [showButton, setShowButton] = useState(false);

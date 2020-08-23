@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 import bg1 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg2 from '../../../../assets/images/utopia/hospital/2H2_UTOPIA.jpg'
 import bg3 from '../../../../assets/images/utopia/hospital/2H3_UTOPIA.jpg'
@@ -61,13 +60,7 @@ const Page2H1_4 = () => {
     );
 
     const renderButton = () => (
-        <div className='p2H4__svg__container'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/2H5'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='remote' link='/utopia/2H5' top='29vh' left='41vw' width='10vw' />
     );
 
 

@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/8C_UTOPIA.jpg'
 
 const Page8C = () => {
     const [showButton, setShowButton] = useState(true);
 
     const renderButton = () => (
-        <div className='p8C__svg__container'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/9C'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='bug' link='/utopia/9C' top='81vh' left='38.5vw' width='10vw' />
     );
 
     return (

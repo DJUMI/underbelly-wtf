@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
+import { LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/9C4_UTOPIA.jpg'
 import bg_bubble from '../../../../assets/images/utopia/co_op/9C4_UTOPIA_BUBBLE.jpg'
 
@@ -17,20 +17,8 @@ const Page9C_4 = () => {
             <div className={`page--slow ${showBubble ? 'active' : ''}`}>
                 <img className='page__image' src={bg_bubble} alt='Bedroom and a thought bubble' />
             </div>
-            <div className='p9C_3__svg__container--bed'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/utopia/9C5_7'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
-            <div className='p9C_3__svg__container--controller'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/dystopia'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
+            <LinkButton title='bed' link='/utopia/9C5_7' top='15vh' left='5vw' width='30vw' />
+            <LinkButton title='controller' link='/dystopia' top='34vh' left='58.5vw' width='10vw' />
         </div>
     );
 };

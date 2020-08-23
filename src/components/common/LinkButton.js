@@ -15,15 +15,15 @@ const Container = styled.div`
 
 const LinkButton = ({ link, color, top, left, width }) => (
     <Container top={top} left={left} width={width}>
-        <svg viewBox='0 0 100 100' className='button__svg--box' preserveAspectRatio='none'>
+        <svg viewBox='0 0 100 100' className='link-button__svg--box' preserveAspectRatio='none'>
             <defs>
                 <radialGradient id="RadialGradient1">
                     <stop offset="0%" stop-color={color || "yellow"} />
-                    <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+                    <stop offset="100%" stop-color="rgba(255,255,255,0)" />
                 </radialGradient>
             </defs>
             <Link to={link}>
-                <rect className='button__svg' width="100" height="100" fill="url(#RadialGradient1)" />
+                <rect className='link-button__svg' width="100" height="100" fill="url(#RadialGradient1)" />
             </Link>
         </svg>
     </Container>

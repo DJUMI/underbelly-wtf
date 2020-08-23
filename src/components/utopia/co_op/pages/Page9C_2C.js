@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { Dialogue } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/9C2_UTOPIA.jpg'
 
+//TODO: replace back button, fade out dialgoue
 const Page9C_2C = () => {
-    const [showButton, setShowButton] = useState(true);
-
+    
     const renderButton = () => (
         <div className='svg__container--back'>
             <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>

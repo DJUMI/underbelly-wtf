@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 import bg1 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg2 from '../../../../assets/images/utopia/hospital/3H_UTOPIA_BUBBLE.jpg'
 
@@ -9,13 +8,7 @@ const Page3H = () => {
     const [activePanel, setActivePanel] = useState(2);
 
     const renderButton = () => (
-        <div className='p3H__svg__container'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/1L'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='doors' link='/utopia/1L' top='15vh' left='73vw' width='20vw' />
     );
 
     return (

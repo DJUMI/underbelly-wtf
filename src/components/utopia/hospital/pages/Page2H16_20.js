@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, LinkButton } from '../../../common';
 import bg16 from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 import bg17 from '../../../../assets/images/utopia/hospital/2H17_UTOPIA.jpg'
 import bg18 from '../../../../assets/images/utopia/hospital/2H18_UTOPIA.jpg'
@@ -92,13 +91,7 @@ const Page2H16_20 = () => {
     );
 
     const renderButton = () => (
-        <div className='p3H__svg__container'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/1L'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
+        <LinkButton title='doors' link='/utopia/1L' top='15vh' left='73vw' width='20vw' />
     );
 
     return (
@@ -108,7 +101,7 @@ const Page2H16_20 = () => {
             {render2H18()}
             {render2H19()}
             {render2H20()}
-            {showButton ? renderButton() : null}
+            {activePanel === 20 ? renderButton() : null}
         </div>
     );
 };

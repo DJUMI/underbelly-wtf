@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { LinkButton } from '../../../common';
 
 import bg from '../../../../assets/images/utopia/co_op/2C_UTOPIA.jpg'
 
@@ -8,20 +9,8 @@ const Page2C = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Co op front door and bulletin board' />
-            <div className='p2C__svg__container--board'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/utopia/3C'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
-            <div className='p2C__svg__container--door'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/utopia/5C'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
+            <LinkButton title='board' link='/utopia/3C' top='5vh' left='8vw' width='30vw'/>
+            <LinkButton title='door' link='/utopia/5C' top='28vh' left='46vw' width='20vw'/>
         </div>
     );
 };

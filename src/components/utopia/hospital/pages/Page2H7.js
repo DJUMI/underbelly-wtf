@@ -1,19 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import { LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/hospital/2H7_UTOPIA.jpg'
 
 const Page2H7 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Flowers beginning to regrow' />
-            <div className='p2H6__svg__container'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/utopia/2H8'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
+            <LinkButton title='growth' link='/utopia/2H8' top='73vh' left='32.5vw' width='10vw' />
+            <LinkButton title='growth2' link='/utopia/2H8' top='60vh' left='69vw' width='10vw' />
+            <LinkButton title='growth3' link='/utopia/2H8' top='62vh' left='75.5vw' width='10vw' />
+            <LinkButton title='growth4' link='/utopia/2H8' top='50vh' left='79vw' width='10vw' />
         </div>
     );
 };
