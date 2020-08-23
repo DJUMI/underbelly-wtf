@@ -11,7 +11,6 @@ const Page11C_3 = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/11C_4'
                 messages={[
                     { speaker: 'Female Doctor', message: 'There, that wasn’t so bad, was it? Now, you are welcome to stay here for as long as you like, as I said we have open beds. Additionally, there are communities on the West Side that are starting back up again, secretly, all with vaccines.' },

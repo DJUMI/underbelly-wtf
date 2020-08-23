@@ -11,7 +11,6 @@ const Page6A = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/7A'
                 messages={[
                     { speaker: 'Doctor', message: 'Great, because we actually have been scanning your vitals since you walked in. You’re clean, although you could probably stand to floss your teeth  a little more.' }

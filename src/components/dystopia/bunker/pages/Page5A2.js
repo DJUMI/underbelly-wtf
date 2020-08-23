@@ -10,7 +10,7 @@ const Page5A2 = () => {
             <img className='page__image' src={bg} alt='Top of stairs down to door that leads inside of bunker' />
             <Dialogue
                 theme='dystopia'
-                bottom={true}
+                bottom
                 messages={[
                     { speaker: 'Doctor', message: 'Fear, mostly. We would rather not take that unknown risk, it’s guaranteed safe here—so long as we keep COVID out of or District. Hopefully that answers your questions. Let’s move on with the exam. Do you consent?' }
                 ]}

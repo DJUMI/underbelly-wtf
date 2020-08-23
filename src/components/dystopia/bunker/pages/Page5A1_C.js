@@ -10,7 +10,7 @@ const Page5A1_C = () => {
             <img className='page__image' src={bg} alt='Top of stairs down to door that leads inside of bunker' />
             <Dialogue
                 theme='dystopia'
-                bottom={true}
+                bottom
                 messages={[
                     { speaker: 'Doctor', message: 'We rely on recycled air, so if someone has COVID, it’s highly likely that the entire District will get it and wipe out that population. The virus, from our shared observation, mutated last year and has become a complete death sentence.' }
                 ]}

@@ -11,7 +11,6 @@ const Page5C_6 = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/9C'
                 fast
                 messages={[

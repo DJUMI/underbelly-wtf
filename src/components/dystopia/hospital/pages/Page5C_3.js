@@ -12,9 +12,8 @@ const Page5C_3 = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
-                fast
                 buttonLink='/dystopia/9C'
+                fast
                 messages={[
                     { speaker: 'Receptionist', message: 'Guards! Please escort this heathen out of this office. Maybe it would be worth dropping them off at the Sick District, since they’ll probably end up there eventually anyway.' }
                 ]}

@@ -9,6 +9,10 @@ body,
   overflow: scroll;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .page {
   height: 100%;
   background-color: black;
@@ -67,72 +71,8 @@ body,
   width: 100%;
 }
 
-.page__header--utopia {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-}
-
-.page__footer--utopia {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-}
-
 .text__link {
   text-decoration: none;
-}
-
-.utopia__text {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.utopia__text--blank {
-  opacity: 0;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.utopia__text--mono {
-  color: green;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.right-align {
-  width: 100%;
-  text-align: end;
-}
-
-.utopia__text--speaker2 {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  text-align: end;
-  font-family: "calibri";
-}
-
-.utopia__text--clickable {
-  color: #042f66;
-  font-size: large;
-  font-weight: bold;
-  font-family: "calibri";
-}
-
-.utopia__text--clickable:hover {
-  color: #ff0000;
 }
 
 .clickable:hover {

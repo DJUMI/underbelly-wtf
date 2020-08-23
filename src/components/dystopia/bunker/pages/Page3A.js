@@ -11,8 +11,6 @@ const Page3A = () => {
             <img className='page__image' src={bg} alt='Computer Screen' />
             <Dialogue 
                 theme='dystopia'
-                bottom={false}
-                button={false}
                 messages={[
                     { speaker: 'Receptionist', message: 'This is the East Side Bunker District. We do have several cots available for those uninfected. I can open the doors for you where you will be greeted by one of our medics.' }
                 ]}

@@ -10,8 +10,7 @@ const Page5A1_B = () => {
             <img className='page__image' src={bg} alt='Top of stairs down to door that leads inside of bunker' />
             <Dialogue
                 theme='dystopia'
-                bottom={true}
-                button={true}
+                bottom
                 buttonLink='/dystopia/5A1_C'
                 messages={[
                     { speaker: 'Doctor', message: 'With our health screenings and limiting only Scavengers to wander, we have actually had zero COVID cases in the Bunker Districts. Milwaukee is also at zero, but Sheboygan recently had an outbreak in their District…It was devastating.' }

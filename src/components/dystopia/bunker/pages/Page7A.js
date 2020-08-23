@@ -11,7 +11,6 @@ const Page7A = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/8A'
                 messages={[
                     { speaker: 'Doctor', message: 'This paper has a map of the District, the number of an available apartment that you can use while you live here, and my stamp of clean health. Keep this on you at all times, you will be asked to show it at random health checkpoints.' },

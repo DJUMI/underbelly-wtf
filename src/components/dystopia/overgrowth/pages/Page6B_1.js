@@ -11,7 +11,6 @@ const Page6B_1 = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/6B_2'
                 messages={[
                     { speaker: 'Person 1', message: 'We’re Bunker scavengers, we’re looking for scrap metal. You’d be surprised what people have just left .' },

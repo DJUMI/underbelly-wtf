@@ -57,7 +57,6 @@ const Page2H10_14 = () => {
                 messages={[
                     { speaker: 'Person 1', message: 'Did you know that ambulances used to cost money?' },
                     { speaker: 'Person 2', message: 'I thought that was a rumor? Why would they charge you for an accident you didn’t cause? And who would pay?' },
-                    { speaker: 'Person 1', message: 'I’m not sure but I think heard it on a podcast or something.'}
                 ]}
             />
         </div>

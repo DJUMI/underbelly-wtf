@@ -9,7 +9,6 @@ const Page7C = () => {
             <img className='page__image' src={bg} alt='Looking down at your gown' />
             <Dialogue
                 theme='utopia'
-                button
                 buttonLink='/utopia/7C'
                 responses={[
                     { link: '/utopia/8C', message: '"Yeah... I forgot I was wearing it. What do you mean giant purge?"'},

@@ -11,7 +11,6 @@ const Page11C_1 = () => {
             <Dialogue
                 theme='dystopia'
                 bottom
-                button
                 buttonLink='/dystopia/11C_2'
                 messages={[
                     { speaker: 'Female Doctor', message: 'Fortunately the plague is very rare and is now treatable with the right vaccine. Germany sent us the instructions after the Sheboygan District was obliterated several years back.' },

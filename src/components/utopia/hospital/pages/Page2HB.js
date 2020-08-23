@@ -10,6 +10,7 @@ const Page2HB = () => {
             <img className='page__image' src={bg} alt='Nurse in Hospital Room' />
             <Dialogue
                 theme='utopia'
+                fast
                 messages={[
                     { speaker: 'Nurse', message: 'You’re in the hospital. You hit your head pretty hard out there but your companion told us you lost consciousness. Pretty scary stuff if you ask me! But anyhoo, would you like to view your accident?' }
                 ]}
