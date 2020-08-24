@@ -106,12 +106,14 @@ const App = () => {
                 <Route exact path='/dystopia/7A' component={d1.Page7A} />
                 <Route exact path='/dystopia/8A' component={d1.Page8A} />
                 <Route exact path='/dystopia/9A' component={d1.Page9A} />
+                <Route exact path='/dystopia/9A_1' component={d1.Page9A_1} />
+                <Route exact path='/dystopia/9A_2' component={d1.Page9A_2} />
                 <Route exact path='/dystopia/10A' component={d1.Page10A} />
                 <Route exact path='/dystopia/11A' component={d1.Page11A} />
                 <Route exact path='/dystopia/12A' component={d1.Page12A} />
                 <Route exact path='/dystopia/13A' component={d1.Page13A} />
-                <Route exact path='/dystopia/13A1' component={d1.Page13A1} />
-                <Route exact path='/dystopia/13A2' component={d1.Page13A1} />
+                <Route exact path='/dystopia/13A_1' component={d1.Page13A_1} />
+                <Route exact path='/dystopia/13A_2' component={d1.Page13A_2} />
                 <Route exact path='/dystopia/14A' component={d1.Page14A} />
 
                 {/* Dystopia Overgrowth Chapter */}

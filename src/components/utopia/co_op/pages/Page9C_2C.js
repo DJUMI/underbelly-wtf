@@ -1,21 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-import { Dialogue } from '../../../common';
+import { BackButton, Dialogue } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/9C2_UTOPIA.jpg'
 
-//TODO: replace back button, fade out dialgoue
+//TODO: fade out dialgoue
 const Page9C_2C = () => {
-    
-    const renderButton = () => (
-        <div className='svg__container--back'>
-            <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                <Link to='/utopia/9C_tom'>
-                    <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                </Link>
-            </svg>
-        </div>
-    );
 
     return (
         <div className='page'>
@@ -26,7 +15,7 @@ const Page9C_2C = () => {
                     { speaker: 'Robot', message: 'One pasta sauce coming right up!' }
                 ]}
             />
-            {renderButton()}
+            <BackButton link='/utopia/9C_tom' theme='utopia' />
         </div>
     );
 };

@@ -85,6 +85,40 @@ p {
   width: 100%;
 }
 
+/**************** Back Button ******************/
+.back-button__container {
+  position: absolute;
+  top: 40vh;
+  left: 0.5vw;
+}
+
+.back-button__container:hover {
+  position: absolute;
+  top: 39.5vh;
+  left: 0vw;
+}
+
+.back-arrow--dystopia {
+  width: 15vw;
+}
+
+/**************** Next Button ******************/
+.next-button__container {
+  position: absolute;
+  top: 40vh;
+  right: 0.5vw;
+}
+
+.next-button__container:hover {
+  position: absolute;
+  top: 39.5vh;
+  right: 0vw;
+}
+
+.next-arrow--dystopia {
+  width: 15vw;
+}
+
 /**************** Border Button ******************/
 .border-button__container {
   height: 100%;

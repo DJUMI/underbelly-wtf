@@ -8,6 +8,7 @@ const MapModal = () => {
     return (
         <div className='modal__container'>
             <img className='modal__image' src={bg} alt='Map' />
+            <LinkButton title='entrance' link='/dystopia/4A' top='60vh' left='31vw' width='8vw'/>
             <LinkButton title='clinic' link='/dystopia/9A' top='60vh' left='44vw' width='8vw'/>
             <LinkButton title='market' link='/dystopia/10A' top='43vh' left='43vw' width='10vw'/>
             <LinkButton title='cinema' link='/dystopia/11A' top='54vh' left='59vw' width='10vw'/>

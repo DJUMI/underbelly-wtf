@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Dialogue } from '../../../common';
-
 import bg from '../../../../assets/images/utopia/hospital/2H_UTOPIAp_FACECHANGE.jpg'
 
 const Page2HD = () => {

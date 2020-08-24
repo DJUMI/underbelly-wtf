@@ -1,22 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { LinkButton } from '../../../common';
+import { BackButton, LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/9C2_UTOPIA.jpg'
 
-//TODO: replace back button
 const Page9C_2A = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Hallway' />
             <LinkButton title='robot' link='/utopia/9C_2B' top='25vh' left='67vw' width='20vw' />
-            <div className='svg__container--back'>
-                <svg viewBox='0 0 100 100' className='svg__content' preserveAspectRatio='none'>
-                    <Link to='/utopia/9C_tom'>
-                        <circle className='clickable--svg' cx="50" cy="50" r="47" />
-                    </Link>
-                </svg>
-            </div>
+            <BackButton link='/utopia/9C_tom' theme='utopia' />
         </div>
     );
 };

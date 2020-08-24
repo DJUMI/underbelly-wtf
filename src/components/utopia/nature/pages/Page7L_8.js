@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-import { LinkButton } from '../../../common';
+import { BackButton, LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/nature/7L2_UTOPIA.jpg'
 import bg_bubble from '../../../../assets/images/utopia/nature/7L8_UTOPIA_BUBBLE.jpg'
 
-//TODO: replace back button
+//TODO: add down button
 const Page7L_8 = () => {
     const [showBubble, setShowBubble] = useState(false);
     const [showButton, setShowButton] = useState(false);
@@ -13,11 +13,6 @@ const Page7L_8 = () => {
         setShowBubble(true);
         setTimeout(() => setShowButton(true), 3000)
     }, []);
-
-    const renderButton = () => (
-        <LinkButton title='back' link='/utopia/1L' top='50vh' left='0vw' width='10vw' />
-    );
-
 
     return (
         <div className='page'>
@@ -28,7 +23,7 @@ const Page7L_8 = () => {
             <LinkButton title='poster' link='/utopia/7L_5' top='27vh' left='9vw' width='10vw' />
             <LinkButton title='desk' link='/utopia/7L_3A' top='35vh' left='46vw' width='20vw' />
             <LinkButton title='tv' link='/utopia/7L_7' top='11vh' left='61.5vw' width='10vw' />
-            {showButton ? renderButton() : null}
+            {showButton ? <BackButton link='/utopia/1L' theme='utopia' /> : null}
         </div>
     );
 };
