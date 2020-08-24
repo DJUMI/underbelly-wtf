@@ -54,17 +54,46 @@ p {
 
 .modal__container {
   height: 100%;
-  background-color: black;
   z-index: 1;
 }
 
 .modal__image {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
+
+.modal__container--flyer {
+  height: 100vh;
+  width: 50vw;
+  z-index: 1;
+}
+
+.modal__image--flyer {
+  position: relative;
+  top: 0;
+  left: 25vw;
+  height: 100%;
+  width: 100%;
+}
+
+.modal__container--paper {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.modal__image--paper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
 
 /**************** clickable ******************/
 
@@ -120,6 +149,28 @@ p {
 
 .back-arrow--dystopia {
   width: 15vw;
+}
+
+/**************** Close Button ******************/
+
+.close-button__container {
+  position: absolute;
+  top: 0.5vh;
+  left: 0.5vw;
+}
+
+.close-button__container:hover {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+}
+
+.close-icon--dystopia {
+  width: 15vw;
+}
+
+.close-icon--dystopia:hover {
+  cursor: pointer;
 }
 
 /**************** Next Button ******************/
@@ -255,6 +306,17 @@ p {
 
 .link-button__svg:hover {
   fill-opacity: 0.75;
+}
+
+/**************** Open Button ******************/
+
+.open-button__svg {
+  fill-opacity: 0;
+}
+
+.open-button__svg:hover {
+  fill-opacity: 0.75;
+  cursor: pointer;
 }
 
 /**************** Landing ******************/
