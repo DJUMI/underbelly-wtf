@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { LinkButton } from '../../../common';
 import bg1 from '../../../../assets/images/utopia/nature/5L_UTOPIA.jpg'
 import bg2 from '../../../../assets/images/utopia/nature/6L_UTOPIA.jpg'
-
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page5_6L = () => {
     const [activePanel, setActivePanel] = useState(1);
     const [showButton, setShowButton] = useState(false);
+    const { playSong } = useContext(AudioContext);
 
     useEffect(() => {
+        playSong('track5L');
         setTimeout(() => {
             setActivePanel(2);
         }, 3000);

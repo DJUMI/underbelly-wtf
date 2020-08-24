@@ -16,5 +16,6 @@ export * from './Page9C_2A';
 export * from './Page9C_2B';
 export * from './Page9C_2C';
 export * from './Page9C_4';
+export * from './Page9C_4A';
 export * from './Page9C5_7';
 export * from './Page10C';

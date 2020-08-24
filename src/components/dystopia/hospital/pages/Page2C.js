@@ -4,6 +4,7 @@ import { LinkButton } from '../../../common';
 
 const Page2C = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia3C.jpg';
+    
 
     return (
         <div className='page'>

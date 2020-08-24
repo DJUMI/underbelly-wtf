@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { LinkButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 import bg from '../../../../assets/images/utopia/co_op/5C_UTOPIA.jpg'
 
 const Page5C = () => {
+    const { playSong } = useContext(AudioContext);
 
+    useEffect(() => {
+        playSong('track5C_U');
+    }, []);
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Hallway' />

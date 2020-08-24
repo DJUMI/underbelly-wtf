@@ -18,8 +18,8 @@ const LinkButton = ({ link, color, top, left, width }) => (
         <svg viewBox='0 0 100 100' className='link-button__svg--box' preserveAspectRatio='none'>
             <defs>
                 <radialGradient id="RadialGradient1">
-                    <stop offset="0%" stop-color={color || 'rgba(255,204,0,1)'} />
-                    <stop offset="100%" stop-color="rgba(255,204,0,0)" />
+                    <stop offset="0%" stopColor={color || 'rgba(255,204,0,1)'} />
+                    <stop offset="100%" stopColor="rgba(255,204,0,0)" />
                 </radialGradient>
             </defs>
             <Link to={link}>

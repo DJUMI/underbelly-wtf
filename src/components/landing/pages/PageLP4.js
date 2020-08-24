@@ -11,10 +11,9 @@ const PageLP4 = () => {
     const [activePanel, setActivePanel] = useState(1);
 
     useEffect(() => {
-
         setTimeout(() => {
             setActivePanel(2);
-        }, 19000);
+        }, 14000);
     }, []);
 
     const renderLP4_1 = () => (

@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { CloseButton, LinkButton, OpenButton } from '../../common';
 import { CabinetModal, PosterModal } from './modals';
+import { Context as AudioContext } from '../../../context/AudioContext';
 import bg from '../../../assets/images/utopia/hospital/1H_UTOPIA.jpg'
 
 const UtopiaStart = () => {
     const [showModal, setShowModal] = useState(0);
+    const { playSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        playSong('track1H');
+    }, []);
 
     const renderButtons = () => (
         <>

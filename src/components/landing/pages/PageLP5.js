@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+import { Context as AudioContext } from '../../../context/AudioContext';
 
 const PageLP5 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP4_2.png'
+    const { stopSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        stopSong('track1L');
+    }, []);
 
     return (
         <div className='page'>

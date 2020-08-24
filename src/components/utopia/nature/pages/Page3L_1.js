@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { LinkButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
+
 import bg from '../../../../assets/images/utopia/nature/3L1_UTOPIA.jpg'
 
 const Page3L_1 = () => {
+    const { playSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        playSong('track3L');
+    }, []);
 
     return (
         <div className='page'>

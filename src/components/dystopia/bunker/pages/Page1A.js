@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Page1A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia1A.jpg';
-
+    
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Computer Screen' />

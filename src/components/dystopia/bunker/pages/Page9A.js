@@ -4,7 +4,7 @@ import { LinkButton, MapButton } from '../../../common';
 
 const Page9A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia9A_1.jpg';
-
+    
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Computer Screen' />

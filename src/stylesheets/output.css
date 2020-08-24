@@ -113,13 +113,13 @@ p {
 }
 
 /**************** Back Button ******************/
-.back-button__container {
+.back-button__container--dystopia {
   position: absolute;
   top: 40vh;
   left: 0.5vw;
 }
 
-.back-button__container:hover {
+.back-button__container--dystopia:hover {
   position: absolute;
   top: 39.5vh;
   left: 0vw;
@@ -127,6 +127,22 @@ p {
 
 .back-arrow--dystopia {
   width: 15vw;
+}
+
+.back-button__container--utopia {
+  position: absolute;
+  top: 45vh;
+  left: 2vw;
+}
+
+.back-button__container--utopia:hover {
+  position: absolute;
+  top: 44.5vh;
+  left: 1.5vw;
+}
+
+.back-arrow--utopia {
+  width: 4vw;
 }
 
 /**************** Close Button ******************/
@@ -151,13 +167,13 @@ p {
 }
 
 /**************** Next Button ******************/
-.next-button__container {
+.next-button__container--dystopia {
   position: absolute;
   top: 40vh;
   right: 0.5vw;
 }
 
-.next-button__container:hover {
+.next-button__container--dystopia:hover {
   position: absolute;
   top: 39.5vh;
   right: 0vw;
@@ -165,6 +181,22 @@ p {
 
 .next-arrow--dystopia {
   width: 15vw;
+}
+
+.next-button__container--utopia {
+  position: absolute;
+  top: 45vh;
+  right: 2vw;
+}
+
+.next-button__container--utopia:hover {
+  position: absolute;
+  top: 44.5vh;
+  right: 1.5vw;
+}
+
+.next-arrow--utopia {
+  width: 4vw;
 }
 
 /**************** Border Button ******************/

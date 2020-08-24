@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { Dialogue } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
+
 import bg10 from '../../../../assets/images/utopia/hospital/2H10_UTOPIA.jpg'
 import bg11 from '../../../../assets/images/utopia/hospital/2H11_UTOPIA.jpg'
 import bg12 from '../../../../assets/images/utopia/hospital/2H12_UTOPIA.jpg'
@@ -11,7 +13,8 @@ import bg14 from '../../../../assets/images/utopia/hospital/2H14_UTOPIA.jpg'
 
 const Page2H10_14 = () => {
     const [activePanel, setActivePanel] = useState(10);
-
+    const { playSong } = useContext(AudioContext);
+    
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(11);
@@ -23,6 +26,7 @@ const Page2H10_14 = () => {
 
         setTimeout(() => {
             setActivePanel(13);
+            playSong('track2H13');
         }, 36000);
 
         setTimeout(() => {

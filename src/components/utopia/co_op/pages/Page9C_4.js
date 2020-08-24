@@ -18,7 +18,7 @@ const Page9C_4 = () => {
                 <img className='page__image' src={bg_bubble} alt='Bedroom and a thought bubble' />
             </div>
             <LinkButton title='bed' link='/utopia/9C5_7' top='15vh' left='5vw' width='30vw' />
-            <LinkButton title='controller' link='/dystopia' top='34vh' left='58.5vw' width='10vw' />
+            <LinkButton title='controller' link='/utopia/9C_4A' top='34vh' left='58.5vw' width='10vw' />
         </div>
     );
 };

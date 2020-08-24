@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { LinkButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 import bg1 from '../../../../assets/images/utopia/co_op/9C5_UTOPIA.jpg'
 import bg2 from '../../../../assets/images/utopia/co_op/9C6_UTOPIA.jpg'
 import bg3 from '../../../../assets/images/utopia/co_op/9C7_UTOPIA.jpg'
@@ -8,14 +9,20 @@ import bg3 from '../../../../assets/images/utopia/co_op/9C7_UTOPIA.jpg'
 const Page9C5_7 = () => {
     const [activePanel, setActivePanel] = useState(1);
 
+    const { playSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        playSong('track9C5');
+    }, []);
+
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(2);
-        }, 5000);
+        }, 20000);
 
         setTimeout(() => {
             setActivePanel(3);
-        }, 10000);
+        }, 30000);
     }, []);
 
     const renderButton = () => (

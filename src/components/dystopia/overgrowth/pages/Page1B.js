@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { LinkButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page1B = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia1B.jpg';
-    
+    const { playSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        playSong('track1B');
+    }, []);
+
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='View of boarded up house and abandoned car covered in overgrowth' />

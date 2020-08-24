@@ -4,7 +4,7 @@ import { Dialogue } from '../../../common';
 
 const Page5C_1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia4C_1.jpg';
-
+    
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Hospital reception desk' />
