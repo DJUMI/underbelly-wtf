@@ -1,6 +1,7 @@
 export * from './Page1C';
 export * from './Page2C';
 export * from './Page3C';
+export * from './Page4C';
 export * from './Page5C';
 export * from './Page6CA';
 export * from './Page6CB';

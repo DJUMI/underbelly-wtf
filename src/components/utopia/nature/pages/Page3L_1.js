@@ -10,6 +10,7 @@ const Page3L_1 = () => {
             <img className='page__image' src={bg} alt='Bench by several tall trees' />
             <LinkButton title='tree' link='/utopia/3L_2' top='40vh' left='38vw' width='10vw' />
             <LinkButton title='bench' link='/utopia/3L_4' top='58vh' left='50vw' width='20vw' />
+            <LinkButton title='egg' link='/utopia/3L_1_squirrel' top='10vh' left='58vw' width='10vw' />
         </div>
     );
 };

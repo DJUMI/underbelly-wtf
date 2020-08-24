@@ -55,10 +55,12 @@ const App = () => {
                 <Route exact path='/utopia/2L_1' component={u2.Page2L_1} />
                 <Route exact path='/utopia/2L_2' component={u2.Page2L_2} />
                 <Route exact path='/utopia/3L_1' component={u2.Page3L_1} />
+                <Route exact path='/utopia/3L_1_squirrel' component={u2.Page3L_1_squirrel} />
                 <Route exact path='/utopia/3L_2' component={u2.Page3L_2} />
                 <Route exact path='/utopia/3L_4' component={u2.Page3L_4} />
                 <Route exact path='/utopia/3L_5' component={u2.Page3L_5} />
                 <Route exact path='/utopia/4L' component={u2.Page4L} />
+                <Route exact path='/utopia/4L_1' component={u2.Page4L_1} />
                 <Route exact path='/utopia/5_6L' component={u2.Page5_6L} />
                 <Route exact path='/utopia/7L' component={u2.Page7L} />
                 <Route exact path='/utopia/7L_1' component={u2.Page7L_1} />
@@ -73,6 +75,7 @@ const App = () => {
                 <Route exact path='/utopia/1C' component={u3.Page1C} />
                 <Route exact path='/utopia/2C' component={u3.Page2C} />
                 <Route exact path='/utopia/3C' component={u3.Page3C} />
+                <Route exact path='/utopia/4C' component={u3.Page4C} />
                 <Route exact path='/utopia/5C' component={u3.Page5C} />
                 <Route exact path='/utopia/6CA' component={u3.Page6CA} />
                 <Route exact path='/utopia/6CB' component={u3.Page6CB} />
