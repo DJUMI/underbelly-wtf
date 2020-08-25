@@ -4,7 +4,7 @@ export const Context = createContext();
 
 const initState = {
     current: null,
-    next: 2,
+    prev: null,
     fx: {
 
     },
@@ -41,9 +41,9 @@ const initState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'PLAY_SONG':
-            return { ...state, current: action.payload };
+            return { ...state, prev: state.current, current: action.payload };
         case 'STOP_SONG':
-            return { ...state, current: null };
+            return { ...state, current: null, prev: null };
         default:
             return state;
     };
@@ -79,9 +79,15 @@ export default function AudioContext(props) {
             if (state.current === value) {
                 return;
             }
-            fadeOut(state.tracks[state.current], 0, 0.1, 500, 1);
+            if (state.prev) {
+                if (!state.tracks[state.prev].paused) {
+                    state.tracks[state.prev].pause();
+                }
+            }
+            fadeOut(state.tracks[state.current], 0, 0.1, 100, 1);
         }
         state.tracks[value].volume = 0;
+        state.tracks[value].loop = true;
         fadeIn(state.tracks[value], 1, 0.1, 500);
         dispatch({ type: 'PLAY_SONG', payload: value });
     };
