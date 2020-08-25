@@ -13,9 +13,11 @@ const DystopiaStart = () => {
 
     return (
         <div className='page'>
-            <img className='page__image' src={bg} alt='Creepy Bunker' />
-            <LinkButton title='comp' link='/dystopia/1A' top='57.25vh' left='58.4vw' width='6vw'/>
-            <LinkButton title='fence' link='/dystopia/1B' top='37.5vh' left='71.68vw' width='6vw'/>
+            <div className='fade-in--slower'>
+                <img className='page__image' src={bg} alt='Creepy Bunker' />
+                <LinkButton title='comp' link='/dystopia/1A' top='57.25vh' left='58.4vw' width='6vw' />
+                <LinkButton title='fence' link='/dystopia/1B' top='37.5vh' left='71.68vw' width='6vw' />
+            </div>
         </div>
     );
 };
