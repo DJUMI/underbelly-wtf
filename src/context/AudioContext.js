@@ -88,7 +88,7 @@ export default function AudioContext(props) {
 
     const stopSong = (value) => {
         if (state.current != null) {
-            fadeOut(state.current, 0, 0.1, 500, 1);
+            fadeOut(state.tracks[state.current], 0, 0.1, 500, 1);
         }
         dispatch({ type: 'STOP_SONG', payload: value });
     };

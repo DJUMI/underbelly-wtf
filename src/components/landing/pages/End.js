@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed';
 
-import t from '../../../constants/text';
 import bg from '../../../assets/images/landing/end.png';
 
 const End = () => {
@@ -17,13 +15,13 @@ const End = () => {
     const renderButtons = () => (
         <div className='end__container'>
             <Link className='end__container' to='/LP5'>
-                <span className='LP__text'>Restart</span>
+                <span className='LP__text--clickable'>Restart</span>
             </Link>
             <Link className='end__container' to='/credits'>
-                <span className='LP__text'>Credits</span>
+                <span className='LP__text--clickable'>Credits</span>
             </Link>
             <Link className='end__container' to='/jukebox'>
-                <span className='LP__text'>Jukebox</span>
+                <span className='LP__text--clickable'>Jukebox</span>
             </Link>
         </div>
     );

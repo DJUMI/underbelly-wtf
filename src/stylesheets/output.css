@@ -414,7 +414,13 @@ p {
   font-size: larger;
 }
 
-.LP__text:hover {
+.LP__text--clickable {
+  color: green;
+  font-family: "courier";
+  font-size: larger;
+}
+
+.LP__text--clickable:hover {
   color: yellow;
 }
 

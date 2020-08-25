@@ -12,7 +12,7 @@ const Page3C_4 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'You’re feet work, don’t they?  If you’re eligible, you can go in. If you’re not—which, by the looks of it, you aren’t— you can f*ck off. Maybe the Sick District will take you.' }
+                    { speaker: 'HDS Guard "Moore"', message: 'Your feet work, don’t they?  If you’re eligible, you can go in. If you’re not — which, by the looks of it, you aren’t — you can f*ck off. Maybe the Sick District will take you.' }
                 ]}
                 responses={[
                     { link: '/dystopia/3C_5', message: '"But I don’t feel sick."' }

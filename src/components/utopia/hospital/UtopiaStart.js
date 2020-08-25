@@ -22,12 +22,14 @@ const UtopiaStart = () => {
     );
 
     return (
-        <div className='page'>
-            <img className='page__image' src={bg} alt='Hospital Room' />
-            {showModal === 0 ? renderButtons() : null}
-            {showModal === 1 ? <PosterModal /> : null}
-            {showModal === 2 ? <CabinetModal /> : null}
-            {showModal ? <CloseButton onClick={() => setShowModal(0)} theme='dystopia'/> : null}
+        <div className='fade-in--slower'>
+            <div className='page'>
+                <img className='page__image' src={bg} alt='Hospital Room' />
+                {showModal === 0 ? renderButtons() : null}
+                {showModal === 1 ? <PosterModal /> : null}
+                {showModal === 2 ? <CabinetModal /> : null}
+                {showModal ? <CloseButton onClick={() => setShowModal(0)} theme='dystopia' /> : null}
+            </div>
         </div>
     );
 };

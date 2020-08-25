@@ -13,7 +13,7 @@ const Page5A1_B = () => {
                 bottom
                 buttonLink='/dystopia/5A1_C'
                 messages={[
-                    { speaker: 'Doctor', message: 'With our health screenings and limiting only Scavengers to wander, we have actually had zero COVID cases in the Bunker Districts. Milwaukee is also at zero, but Sheboygan recently had an outbreak in their District…It was devastating.' }
+                    { speaker: 'Doctor', message: 'With our health screenings and limiting only Scavengers to wander, we have actually had zero COVID cases in the Bunker Districts. Milwaukee is also at zero, but Sheboygan recently had an outbreak in their District… It was devastating.' }
                 ]}
             />
         </div>
