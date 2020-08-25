@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { Dialogue } from '../../../common';
-import end from '../../../../assets/images/landing/end.png';
+import { End } from '../../../landing/pages';
 
 const Page6C = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia4C_1.jpg';
@@ -48,13 +47,8 @@ const Page6C = () => {
 
     const renderEnd = () => (
         <div className={`page--transition ${activePanel === 3 ? 'active' : ''}`}>
-                <img className='page__image' src={end} alt='Game Over' />
-                <Link to='/LP5'>
-                    <div className='LP__text_container--end'>
-                        <span className='LP__text'>Try again?</span>
-                    </div>
-                </Link>
-            </div>
+            {activePanel === 3 ? <End /> : null}
+        </div>
     );
 
     return (

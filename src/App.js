@@ -25,6 +25,8 @@ const App = () => {
                     <Route exact path='/LP3' component={l.PageLP3} />
                     <Route exact path='/LP4' component={l.PageLP4} />
                     <Route exact path='/LP5' component={l.PageLP5} />
+                    <Route exact path='/credits' component={l.Credits} />
+                    <Route exact path='/jukebox' component={l.Jukebox} />
 
                     <Route exact path='/utopia' component={UtopiaStart} />
                     <Route exact path='/dystopia' component={DystopiaStart} />
@@ -113,7 +115,6 @@ const App = () => {
                     <Route exact path='/dystopia/13A' component={d1.Page13A} />
                     <Route exact path='/dystopia/13A_1' component={d1.Page13A_1} />
                     <Route exact path='/dystopia/13A_2' component={d1.Page13A_2} />
-                    <Route exact path='/dystopia/14A' component={d1.Page14A} />
 
                     {/* Dystopia Overgrowth Chapter */}
                     <Route exact path='/dystopia/1B' component={d2.Page1B} />

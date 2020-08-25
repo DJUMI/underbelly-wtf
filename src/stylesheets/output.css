@@ -12,6 +12,7 @@ body,
 }
 
 p {
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
@@ -23,6 +24,12 @@ p {
 .page {
   height: 100%;
   background-color: black;
+  z-index: -1;
+}
+
+.page--purple {
+  height: 100%;
+  background-color: #582f73;
   z-index: -1;
 }
 
@@ -166,6 +173,23 @@ p {
   cursor: pointer;
 }
 
+/**************** Down Button ******************/
+.down-button__container {
+  position: absolute;
+  bottom: 1vh;
+  left: 47.5vw;
+}
+
+.down-button__container:hover {
+  position: absolute;
+  bottom: 1.5vh;
+  left: 47.75vw;
+}
+
+.down-arrow {
+  width: 5vw;
+}
+
 /**************** Next Button ******************/
 .next-button__container--dystopia {
   position: absolute;
@@ -231,6 +255,26 @@ p {
   padding: 10px;
 }
 
+.dialogue--noMsgs {
+  position: absolute;
+  top: 5vh;
+  left: 15vw;
+  width: 70%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0 10px 10px 10px;
+}
+
+.dialogue--bottom--noMsgs {
+  position: absolute;
+  bottom: 5vh;
+  left: 15vw;
+  width: 70%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0 10px 10px 10px;
+}
+
 .dialogue__container--icon {
   display: flex;
   flex-direction: column;
@@ -289,6 +333,10 @@ p {
 
 .dialogue__text--utopia--clickable:hover {
   color: #ff0000;
+}
+
+.dialogue__icon--utopia {
+  width: 1.5vw;
 }
 
 /**************** Link Button ******************/
@@ -366,11 +414,20 @@ p {
   font-size: larger;
 }
 
+.LP__text:hover {
+  color: yellow;
+}
+
 .LP__text--bold {
   color: green;
   font-weight: bold;
   font-family: "courier";
   font-size: larger;
+}
+
+.end__container {
+  margin: 40px;
+  text-decoration: none;
 }
 
 /**************** Dystopia ******************/
@@ -439,6 +496,22 @@ p {
     opacity: 1;
   }
 }
+.fade-in--slow {
+  animation: fadeIn ease 2.5s;
+  -webkit-animation: fadeIn ease 2.5s;
+  -moz-animation: fadeIn ease 2.5s;
+  -o-animation: fadeIn ease 2.5s;
+  -ms-animation: fadeIn ease 2.5s;
+}
+
+.fade-in--slower {
+  animation: fadeIn ease 15s;
+  -webkit-animation: fadeIn ease 15s;
+  -moz-animation: fadeIn ease 15s;
+  -o-animation: fadeIn ease 15s;
+  -ms-animation: fadeIn ease 15s;
+}
+
 .bubble-fade {
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;
@@ -455,6 +528,16 @@ p {
 }
 
 .page--transition.active {
+  opacity: 1;
+}
+
+.page--lazy {
+  height: 100%;
+  opacity: 0;
+  transition: opacity 7s ease-in-out;
+}
+
+.page--lazy.active {
   opacity: 1;
 }
 

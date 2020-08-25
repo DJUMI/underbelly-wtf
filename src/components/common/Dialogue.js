@@ -4,6 +4,7 @@ import Typed from 'react-typed';
 
 import t from '.././../constants/text';
 import d_next from '../../assets/icons/dystopia/forward-small.png'
+import u_next from '../../assets/icons/utopia/UTOPIA_ARROW_RIGHT.png'
 
 /* component to render dialogue boxes
     theme = string(utopia or dystopia)
@@ -13,7 +14,7 @@ import d_next from '../../assets/icons/dystopia/forward-small.png'
     responses = array of objects { link: string, message: string }
 */
 
-const Dialogue = ({ theme, bottom, buttonLink, fast, messages, responses }) => {
+const Dialogue = ({ theme, bottom, buttonLink, fast, startDelay, messages, responses }) => {
     const typeSpeed = fast ? t.typeSpeedFast : t.typeSpeed;
 
     var position = '';
@@ -21,19 +22,24 @@ const Dialogue = ({ theme, bottom, buttonLink, fast, messages, responses }) => {
         position = '--bottom';
     }
 
+    var noMsgs = '';
+    if (messages.length === 0) {
+        noMsgs = '--noMsgs';
+    }
+
     const [showButton, setShowButton] = useState(false);
     const [showSecondMsg, setShowSecondMsg] = useState(false);
     const [showResponse, setShowResponse] = useState(messages.length ? false : true);
 
     const renderMessage = () => (
-        <div className='fade-in'>
-            <span className={`dialogue__text--${theme}--name`}>{messages[0].speaker}: </span>
+        <div className='fade-in--slow'>
+            {messages[0].speaker ? <span className={`dialogue__text--${theme}--name`}>{messages[0].speaker}: </span> : null}
             <Typed
                 className={`dialogue__text--${theme}`}
                 strings={[messages[0].message]}
                 typeSpeed={typeSpeed}
                 showCursor={false}
-                startDelay={1000}
+                startDelay={startDelay}
                 onComplete={() => setTimeout(() => {
                     setShowResponse(true);
                     if (buttonLink) {
@@ -46,13 +52,13 @@ const Dialogue = ({ theme, bottom, buttonLink, fast, messages, responses }) => {
 
     const renderTwoMessages = () => (
         <div className='fade-in'>
-            <span className={`dialogue__text--${theme}--name`}>{messages[0].speaker}: </span>
+            {messages[0].speaker ? <span className={`dialogue__text--${theme}--name`}>{messages[0].speaker}: </span> : null}
             <Typed
                 className={`dialogue__text--${theme}`}
                 strings={[messages[0].message]}
                 typeSpeed={typeSpeed}
                 showCursor={false}
-                startDelay={1000}
+                startDelay={startDelay}
                 onComplete={() => setShowSecondMsg(true)}
             />
             <br></br>
@@ -98,16 +104,21 @@ const Dialogue = ({ theme, bottom, buttonLink, fast, messages, responses }) => {
         </div>
     );
 
-    const renderButton = () => (
-        <div className='fade-in dialogue__container--icon'>
-            <Link to={buttonLink}>
-                <img className={`dialogue__icon--${theme}`} src={d_next} alt={'right arrow'} />
-            </Link>
-        </div>
-    );
+    const renderButton = () => {
+        const icon = theme === 'dystopia' ? d_next : u_next;
+        return (
+            <div className='fade-in dialogue__container--icon'>
+                <Link to={buttonLink}>
+                    <img className={`dialogue__icon--${theme}`} src={icon} alt={'right arrow'} />
+                </Link>
+            </div>
+        );
+    }
+
+
 
     return (
-        <div className={`dialogue${position}`}>
+        <div className={`dialogue${position}${noMsgs}`}>
             {renderMessages()}
             {showResponse ? renderResponses() : null}
             {showButton ? renderButton() : null}
@@ -122,6 +133,7 @@ Dialogue.defaultProps = {
     button: false,
     buttonLink: '',
     fast: false,
+    startDelay: 700,
     messages: [],
     responses: []
 };

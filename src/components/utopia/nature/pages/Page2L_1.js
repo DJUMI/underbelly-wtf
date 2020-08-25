@@ -10,7 +10,7 @@ const Page2L_1 = () => {
 
     useEffect(() => {
         setShowBubble(true);
-        setTimeout(() => setShowButton(true), 3000)
+        setTimeout(() => setShowButton(true), 7000)
     }, []);
 
     const renderButton = () => (

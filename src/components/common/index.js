@@ -2,6 +2,7 @@ export * from './BackButton';
 export * from './BorderButton';
 export * from './CloseButton';
 export * from './Dialogue';
+export * from './DownButton';
 export * from './LinkButton';
 export * from './MapButton';
 export * from './NextButton';

@@ -41,7 +41,7 @@ const initState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'PLAY_SONG':
-            return { ...state, current: state.tracks[action.payload] };
+            return { ...state, current: action.payload };
         case 'STOP_SONG':
             return { ...state, current: null };
         default:
@@ -75,9 +75,11 @@ export default function AudioContext(props) {
     }
 
     const playSong = (value) => {
-        //TODO: check if song is already playing
         if (state.current != null) {
-            fadeOut(state.current, 0, 0.1, 500, 1);
+            if (state.current === value) {
+                return;
+            }
+            fadeOut(state.tracks[state.current], 0, 0.1, 500, 1);
         }
         state.tracks[value].volume = 0;
         fadeIn(state.tracks[value], 1, 0.1, 500);

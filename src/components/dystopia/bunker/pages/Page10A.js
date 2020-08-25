@@ -11,7 +11,7 @@ const Page10A = () => {
             <Dialogue
                 theme='dystopia'
                 messages={[
-                    { speaker: '* *', message: '“Looks like my dollar bills don’t have any value here. Trade is the currency.”' }
+                    { speaker: '', message: '“Looks like my dollar bills don’t have any value here. Trade is the currency.”' }
                 ]}
             />
             <MapButton />
