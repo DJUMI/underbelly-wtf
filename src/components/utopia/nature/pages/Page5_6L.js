@@ -8,10 +8,10 @@ import { Context as AudioContext } from '../../../../context/AudioContext';
 const Page5_6L = () => {
     const [activePanel, setActivePanel] = useState(1);
     const [showButton, setShowButton] = useState(false);
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
 
     useEffect(() => {
-        playSong('track5L');
+        startSong('track5L');
         setTimeout(() => {
             setActivePanel(2);
         }, 3000);

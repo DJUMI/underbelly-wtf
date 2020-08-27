@@ -65,7 +65,7 @@ p {
 }
 
 .modal__image {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -74,16 +74,16 @@ p {
 
 .modal__container--flyer {
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   z-index: 1;
 }
 
 .modal__image--flyer {
   position: relative;
   top: 0;
-  left: 25vw;
+  left: 30vw;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .modal__container--paper {
@@ -97,7 +97,7 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 /**************** clickable ******************/
@@ -297,6 +297,16 @@ p {
   border-radius: 10px;
   background-color: $text-background;
   padding: 0 10px 10px 10px;
+}
+
+.dialogue--bottom--short {
+  position: absolute;
+  bottom: 5vh;
+  left: 15vw;
+  width: 50%;
+  border-radius: 10px;
+  background-color: $text-background;
+  padding: 10px;
 }
 
 .dialogue__container--icon {
@@ -602,5 +612,19 @@ p {
 }
 
 .page--mono.active {
+  opacity: 1;
+}
+
+.page__image--glimpse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.page__image--glimpse.active {
   opacity: 1;
 }

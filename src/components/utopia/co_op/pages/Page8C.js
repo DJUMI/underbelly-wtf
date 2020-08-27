@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Dialogue, LinkButton } from '../../../common';
 import bg from '../../../../assets/images/utopia/co_op/8C_UTOPIA.jpg'
 
 const Page8C = () => {
-    const [showButton, setShowButton] = useState(true);
-
-    const renderButton = () => (
-        <LinkButton title='bug' link='/utopia/9C' top='81vh' left='38.5vw' width='10vw' />
-    );
 
     return (
         <div className='page'>
@@ -20,7 +15,7 @@ const Page8C = () => {
                     { speaker: '', message: 'But we were just finishing up our flatmate meeting which we’ll forgive you for missing this time. But could you go out to the garden to grab us a tomato? Friend here is going to make us pasta for dinner!' }
                 ]}
             />
-            {showButton ? renderButton() : null}
+            <LinkButton title='bug' link='/utopia/9C' top='81vh' left='38.5vw' width='10vw' />
         </div>
     );
 };

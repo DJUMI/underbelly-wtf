@@ -7,10 +7,10 @@ import bg from '../../../assets/images/utopia/hospital/1H_UTOPIA.jpg'
 
 const UtopiaStart = () => {
     const [showModal, setShowModal] = useState(0);
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
 
     useEffect(() => {
-        playSong('track1H');
+        startSong('track1H');
     }, []);
 
     const renderButtons = () => (

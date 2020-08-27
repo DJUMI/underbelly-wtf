@@ -5,10 +5,10 @@ import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page5A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia5A.jpg';
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
 
     useEffect(() => {
-        playSong('track5A');
+        startSong('track5A');
     }, []);
 
     return (

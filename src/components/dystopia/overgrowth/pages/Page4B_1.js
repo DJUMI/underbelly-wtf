@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { End } from '../../../landing/pages';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page4B_1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia4B_1.jpg';
-
     const [activePanel, setActivePanel] = useState(1);
+    const { playFX } = useContext(AudioContext);
 
     useEffect(() => {
+        playFX('shot');
         setTimeout(() => {
             setActivePanel(2);
         }, 7000);

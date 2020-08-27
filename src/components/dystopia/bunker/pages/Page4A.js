@@ -2,13 +2,16 @@ import React, { useContext, useEffect } from 'react';
 
 import { LinkButton } from '../../../common';
 import { Context as AudioContext } from '../../../../context/AudioContext';
+import { Context as PlayerContext } from '../../../../context/PlayerContext';
 
 const Page4A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia4A.jpg';
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
+    const { getBunker } = useContext(PlayerContext);
 
     useEffect(() => {
-        playSong('track1A');
+        startSong('track1A');
+        getBunker();
     }, []);
 
     return (

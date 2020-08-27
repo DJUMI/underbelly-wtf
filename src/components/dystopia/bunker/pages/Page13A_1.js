@@ -1,15 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { BackButton } from '../../../common';
+import { BackButton, Dialogue, PauseButton, PlayButton } from '../../../common';
 
-//TODO: add audio controls
 const Page13A_1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia13A_1.jpg';
+    const [showTitle, setShowTitle] = useState(false);
+    const [showPlay, setShowPlay] = useState(true);
+
+    const renderTitle = () => (
+        <Dialogue
+            theme='dystopia'
+            bottom
+            short
+            startDelay={0}
+            messages={[
+                { message: 'Now Playing: Dudley Noon - I\'ll Get Through This' }
+            ]}
+        />
+    );
+    const renderButtons = () => {
+        if (showPlay) {
+            return (
+                <PlayButton
+                    onClick={() => {
+                        setShowTitle(true);
+                        setShowPlay(false);
+                    }}
+                    track='get_through'
+                    top='46vh'
+                    left='28vw'
+                    width='10vw'
+                />
+            );
+        }
+        return (
+            <PauseButton
+                onClick={() => {
+                    setShowTitle(false);
+                    setShowPlay(true);
+                }}
+                top='46vh'
+                left='28vw'
+                width='10vw'
+            />
+        );
+    }
 
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='ipod' />
+            {renderButtons()}
             <BackButton link='/dystopia/13A' theme='dystopia' />
+            {showTitle ? renderTitle() : null}
         </div>
     );
 };

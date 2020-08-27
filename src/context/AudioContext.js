@@ -5,8 +5,10 @@ export const Context = createContext();
 const initState = {
     current: null,
     prev: null,
+    playing: false,
     fx: {
-
+        crash: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/crash.mp3"),
+        shot: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/shot.mp3"),
     },
     tracks: {
         track1A: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/1A.mp3"),
@@ -19,6 +21,7 @@ const initState = {
         track2C: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/2C.mp3"),
         track5C: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/5C.mp3"),
         track9C: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/9C.mp3"),
+        track10C: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/9C_1.mp3"),
 
         track1C: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/1C.mp3"),
         track5C_U: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/5C.mp3"),
@@ -34,6 +37,8 @@ const initState = {
         track4L: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/4L.mp3"),
         track5L: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/5L.mp3"),
         track7L2: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/7L2.mp3"),
+
+        get_through: new Audio('https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/get_through.mp3'),
     }
 
 };
@@ -41,9 +46,11 @@ const initState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'PLAY_SONG':
-            return { ...state, prev: state.current, current: action.payload };
+            return { ...state, prev: state.current, current: action.payload, playing: true };
         case 'STOP_SONG':
-            return { ...state, current: null, prev: null };
+            return { ...state, current: null, prev: null, playing: false };
+        case 'PAUSE_SONG':
+            return { ...state, playing: false };
         default:
             return state;
     };
@@ -74,7 +81,8 @@ export default function AudioContext(props) {
         }
     }
 
-    const playSong = (value) => {
+    const startSong = (value) => {
+        console.log(`starting: ${value}`)
         if (state.current != null) {
             if (state.current === value) {
                 return;
@@ -92,15 +100,43 @@ export default function AudioContext(props) {
         dispatch({ type: 'PLAY_SONG', payload: value });
     };
 
-    const stopSong = (value) => {
+    const stopSong = () => {
+        console.log(`stopping: ${state.current}`)
         if (state.current != null) {
             fadeOut(state.tracks[state.current], 0, 0.1, 500, 1);
         }
-        dispatch({ type: 'STOP_SONG', payload: value });
+        dispatch({ type: 'STOP_SONG' });
+    };
+
+    const playSong = (value) => {
+        console.log(`playing: ${value}`)
+        state.tracks[value].loop = true;
+        if (state.current != null) {
+            if (state.current === value && !state.tracks[state.current].paused) {
+                return;
+            }
+            state.tracks[state.current].pause();
+        }
+
+        state.tracks[value].play();
+        dispatch({ type: 'PLAY_SONG', payload: value });
+    };
+
+    const pauseSong = () => {
+        console.log(`pausing: ${state.current}`)
+        if (state.current != null) {
+            state.tracks[state.current].pause();
+        }
+        dispatch({ type: 'PAUSE_SONG' });
+    };
+
+    const playFX = (value) => {
+        console.log(`playing FX: ${value}`)
+        state.fx[value].play();
     };
 
     return (
-        <Context.Provider value={{ state, playSong, stopSong }}>
+        <Context.Provider value={{ state, pauseSong, playFX, playSong, startSong, stopSong }}>
             {props.children}
         </Context.Provider>
     );

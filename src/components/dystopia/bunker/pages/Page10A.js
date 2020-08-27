@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Dialogue, MapButton } from '../../../common';
+import { Dialogue, OpenButton } from '../../../common';
+import MapModal from '../modals/MapModal';
 
 const Page10A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia9A_2.jpg';
+    const bg1 = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia9A_2_nomap.jpg';
+    const [showModal, setShowModal] = useState(false);
 
-    return (
-        <div className='page'>
-            <img className='page__image' src={bg} alt='Room with bed and computer' />
+    const renderContent = () => (
+        <>
             <Dialogue
                 theme='dystopia'
                 messages={[
                     { speaker: '', message: '“Looks like my dollar bills don’t have any value here. Trade is the currency.”' }
                 ]}
             />
-            <MapButton />
+            <OpenButton title='map' onClick={() => setShowModal(true)} top='82vh' left='5vw' width='10vw' />
+        </>
+    );
+
+    return (
+        <div className='page'>
+            {showModal ? <img className='page__image' src={bg1} alt='Computer Screen' /> : <img className='page__image' src={bg} alt='Computer Screen' />}
+            {showModal ? <MapModal /> : renderContent()}
         </div>
     );
 };

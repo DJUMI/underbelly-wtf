@@ -6,10 +6,10 @@ import { Context as AudioContext } from '../../../../context/AudioContext';
 import bg from '../../../../assets/images/utopia/co_op/5C_UTOPIA.jpg'
 
 const Page5C = () => {
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
 
     useEffect(() => {
-        playSong('track5C_U');
+        startSong('track5C_U');
     }, []);
     return (
         <div className='page'>

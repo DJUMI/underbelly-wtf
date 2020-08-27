@@ -27,7 +27,7 @@ const PageLP5 = () => {
             <Link to='/utopia'>
                 <div className='clickable LP4__button--utopia' />
             </Link>
-            <Link to='/dystopia'>
+            <Link to='/dystopia/begin'>
                 <div className='clickable LP4__button--dystopia' />
             </Link>
         </div>

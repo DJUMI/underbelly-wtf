@@ -13,7 +13,7 @@ import bg14 from '../../../../assets/images/utopia/hospital/2H14_UTOPIA.jpg'
 
 const Page2H10_14 = () => {
     const [activePanel, setActivePanel] = useState(10);
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
     
     useEffect(() => {
         setTimeout(() => {
@@ -26,7 +26,7 @@ const Page2H10_14 = () => {
 
         setTimeout(() => {
             setActivePanel(13);
-            playSong('track2H13');
+            startSong('track2H13');
         }, 36000);
 
         setTimeout(() => {

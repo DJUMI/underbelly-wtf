@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { DownButton, LinkButton } from '../../../common';
+import { Context as PlayerContext } from '../../../../context/PlayerContext';
 import bg from '../../../../assets/images/utopia/nature/7L2_UTOPIA.jpg'
 import bg_bubble from '../../../../assets/images/utopia/nature/7L8_UTOPIA_BUBBLE.jpg'
 
 const Page7L_8 = () => {
     const [showBubble, setShowBubble] = useState(false);
     const [showButton, setShowButton] = useState(false);
+    const { getChoose } = useContext(PlayerContext);
 
     useEffect(() => {
+        getChoose();
         setShowBubble(true);
         setTimeout(() => setShowButton(true), 3000)
     }, []);

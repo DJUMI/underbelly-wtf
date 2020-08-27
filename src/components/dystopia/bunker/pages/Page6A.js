@@ -13,7 +13,7 @@ const Page6A = () => {
                 bottom
                 buttonLink='/dystopia/7A'
                 messages={[
-                    { speaker: 'Doctor', message: 'Great, we scanned for your vitals when you arrived. Like I said before, we can’t stand to take any risks. You’re clean, although you could probably stand to floss your teeth a little more.' }
+                    { speaker: 'Doctor', message: 'Great, we scanned your vitals when you arrived. Like I said before, we can’t stand to take any risks. You’re clean, although you could probably stand to floss your teeth a little more.' }
                 ]}
             />
         </div>

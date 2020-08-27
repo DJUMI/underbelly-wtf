@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { LinkButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page10C = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/sick/Dystopia9C_1.jpg';
+    const { startSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        startSong('track10C');
+    }, []);
 
     return (
         <div className='page'>

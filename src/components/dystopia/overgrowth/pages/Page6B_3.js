@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { Dialogue } from '../../../common';
+import { Context as PlayerContext } from '../../../../context/PlayerContext';
 
 const Page6B_3 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia6B.jpg';
+    const { getHouse } = useContext(PlayerContext);
+
+    useEffect(() => {
+        getHouse();
+    },[]);
 
     return (
         <div className='page'>

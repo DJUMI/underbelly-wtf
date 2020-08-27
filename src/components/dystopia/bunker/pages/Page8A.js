@@ -2,13 +2,16 @@ import React, { useContext, useEffect } from 'react';
 
 import MapModal from '../modals/MapModal';
 import { Context as AudioContext } from '../../../../context/AudioContext';
+import { Context as PlayerContext } from '../../../../context/PlayerContext';
 
 const Page8A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia8A.jpg';
-    const { playSong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
+    const { getMap } = useContext(PlayerContext);
 
     useEffect(() => {
-        playSong('track9A');
+        startSong('track9A');
+        getMap();
     }, []);
 
     return (

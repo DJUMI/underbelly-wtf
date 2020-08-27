@@ -14,7 +14,7 @@ import u_next from '../../assets/icons/utopia/UTOPIA_ARROW_RIGHT.png'
     responses = array of objects { link: string, message: string }
 */
 
-const Dialogue = ({ theme, bottom, buttonLink, fast, startDelay, messages, responses }) => {
+const Dialogue = ({ theme, bottom, buttonLink, short, fast, startDelay, messages, responses }) => {
     const typeSpeed = fast ? t.typeSpeedFast : t.typeSpeed;
 
     var position = '';
@@ -25,6 +25,11 @@ const Dialogue = ({ theme, bottom, buttonLink, fast, startDelay, messages, respo
     var noMsgs = '';
     if (messages.length === 0) {
         noMsgs = '--noMsgs';
+    }
+
+    var size = '';
+    if (short) {
+        size = '--short';
     }
 
     const [showButton, setShowButton] = useState(false);
@@ -118,7 +123,7 @@ const Dialogue = ({ theme, bottom, buttonLink, fast, startDelay, messages, respo
 
 
     return (
-        <div className={`dialogue${position}${noMsgs}`}>
+        <div className={`dialogue${position}${noMsgs}${size}`}>
             {renderMessages()}
             {showResponse ? renderResponses() : null}
             {showButton ? renderButton() : null}
@@ -132,6 +137,7 @@ Dialogue.defaultProps = {
     bottom: false,
     button: false,
     buttonLink: '',
+    short: false,
     fast: false,
     startDelay: 700,
     messages: [],
