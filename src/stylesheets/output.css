@@ -560,7 +560,7 @@ p {
 .page--slow {
   height: 100%;
   opacity: 0;
-  transition: opacity 4s ease-in-out 2s;
+  transition: opacity 4s ease-in-out;
 }
 
 .page--slow.active {

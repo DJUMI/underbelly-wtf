@@ -8,7 +8,7 @@ const Page11C_5 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Close up of doctor' />
-            <BackButton link='/dystopia/11C_3' theme='dystopia' />
+            <BackButton link='/dystopia/10C' theme='dystopia' />
             <NextButton link='/dystopia/11C_6' theme='dystopia' />
         </div>
     );

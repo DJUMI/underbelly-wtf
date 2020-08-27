@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Dialogue, LinkButton } from '../../../common';
+import { Dialogue } from '../../../common';
 
 const Page11C_3 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/sick/Dystopia9C_3.jpg';
@@ -8,7 +8,7 @@ const Page11C_3 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Close up of doctor' />
-            <LinkButton link='/dystopia/11C_5' theme='dystopia' top='52vh' left='-4vw' width='10vw' />
+            
             <Dialogue
                 theme='dystopia'
                 bottom

@@ -20,7 +20,7 @@ const Page3L_2 = () => {
         setGlimpsed(true);
         setTimeout(() => {
             setShowGlimpse(false);
-        }, 7000)
+        }, 10000)
     }
 
     return (

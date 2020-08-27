@@ -96,14 +96,14 @@ export default function AudioContext(props) {
         }
         state.tracks[value].volume = 0;
         state.tracks[value].loop = true;
-        fadeIn(state.tracks[value], 1, 0.1, 500);
+        fadeIn(state.tracks[value], 1, 0.1, 300);
         dispatch({ type: 'PLAY_SONG', payload: value });
     };
 
     const stopSong = () => {
         console.log(`stopping: ${state.current}`)
         if (state.current != null) {
-            fadeOut(state.tracks[state.current], 0, 0.1, 500, 1);
+            fadeOut(state.tracks[state.current], 0, 0.1, 100, 1);
         }
         dispatch({ type: 'STOP_SONG' });
     };

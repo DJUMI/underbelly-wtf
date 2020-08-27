@@ -10,14 +10,14 @@ const Page9C5_7 = () => {
     const [activePanel, setActivePanel] = useState(1);
     const [showButton, setShowButton] = useState(false);
 
-    const { startsong } = useContext(AudioContext);
+    const { startSong } = useContext(AudioContext);
 
     useEffect(() => {
         
     }, []);
 
     useEffect(() => {
-        startsong('track9C5');
+        startSong('track9C5');
         setTimeout(() => {
             setActivePanel(2);
         }, 15000);

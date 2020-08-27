@@ -6,7 +6,7 @@ import bg1 from '../../../../assets/images/utopia/co_op/10C_UTOPIA.jpg'
 import bg2 from '../../../../assets/images/utopia/co_op/11C_UTOPIA.jpg'
 
 const Page10C = () => {
-    const [activePanel, setActivePanel] = useState(3);
+    const [activePanel, setActivePanel] = useState(1);
     const [showDialogue, setShowDialogue] = useState(false);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Page10C = () => {
         }, 10000);
 
         setTimeout(() => {
-            setActivePanel(3);
+            setActivePanel(2);
         }, 25000);
 
         setTimeout(() => {

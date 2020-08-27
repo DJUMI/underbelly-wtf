@@ -13,7 +13,7 @@ const Page7L_8 = () => {
     useEffect(() => {
         getChoose();
         setShowBubble(true);
-        setTimeout(() => setShowButton(true), 3000)
+        setTimeout(() => setShowButton(true), 1000)
     }, []);
 
     return (
