@@ -18,7 +18,7 @@ const Page5C_2 = () => {
                     { link: '/dystopia/5C_3', message: '"under $50,000"' },
                     { link: '/dystopia/5C_4', message: '"$50,000 - $1,000,000"' },
                     { link: '/dystopia/5C_7', message: '"over $1,000,000"' },
-                    { link: '/dystopia/1C', message: '"What does that have anything to do with anything? I think I’d like to leave."' }
+                    { link: '/dystopia/5C_3', message: '"What does that have anything to do with anything? I think I’d like to leave."' }
                 ]}
             />
         </div>

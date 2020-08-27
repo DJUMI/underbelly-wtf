@@ -12,7 +12,7 @@ const Page2HB = () => {
                 theme='utopia'
                 fast
                 messages={[
-                    { speaker: 'Nurse', message: 'You’re in the hospital. You hit your head pretty hard out there but your companion told us you lost consciousness. Pretty scary stuff if you ask me! But anyhoo, would you like to view your accident?' }
+                    { speaker: 'Nurse', message: 'You’re in the hospital. You hit your head pretty hard out there and your companion told us you lost consciousness. Pretty scary stuff if you ask me! But anyhoo, would you like to view your accident?' }
                 ]}
                 responses={[
                     { link: '/utopia/2HC', message: '"Um, what? I don’t understand."' }

@@ -10,7 +10,7 @@ const Page4B_1 = () => {
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(2);
-        }, 10000);
+        }, 7000);
     }, []);
 
     return (

@@ -12,7 +12,7 @@ const Page11C_2 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Female Doctor', message: 'We currently have open beds and are actively treating patients. People are afraid of what they do not understand. It’s safer for everyone for us to keep the illusion for the time being. The Hospital District has worked hard to get so many people under their thumb and they won’t give up their power peacefully.' },
+                    { speaker: 'Female Doctor', message: 'We currently have open beds and are actively treating patients. People are afraid of what they do not understand. It\'s safer for everyone to keep the illusion going for the time being. The Hospital District has worked hard to get so many people under their thumb and they won’t give up their power peacefully.' },
                     { speaker: '', message: 'I promise, we are planning for the future; It’s not all bleak. Several Bunker Districts Leaders are working to unite to start a much-needed revolution, but it’s too risky right now.  But while you are here, I would like to give you the vaccine so you can no longer contract the plague or infect others. Do you consent?' }
                 ]}
                 responses={[

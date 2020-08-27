@@ -23,7 +23,7 @@ const Page6C = () => {
         <div className={`page--transition ${activePanel === 1 ? 'active' : ''}`}>
             <img className='page__image' src={bg} alt='Nurse in Hospital Room' />
             <Dialogue
-                theme='utopia'
+                theme='dystopia'
                 bottom
                 messages={[
                     { speaker: 'Nurse', message: 'Praise Him for you are truly Blessed! I will remove the funds from your account immediately, please come in straight away!' },

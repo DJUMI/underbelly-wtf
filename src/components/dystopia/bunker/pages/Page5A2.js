@@ -12,11 +12,11 @@ const Page5A2 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Doctor', message: 'Fear, mostly. We would rather not take that unknown risk, it’s guaranteed safe here—so long as we keep COVID out of or District. Hopefully that answers your questions. Let’s move on with the exam. Do you consent?' }
+                    { speaker: 'Doctor', message: 'Most would rather not take the unknown risk. You are guaranteed to be safe here—so long as we keep the plague out of our District. I hope  that answers your questions. Let’s move on with the exam. Do you consent?' }
                 ]}
                 responses={[
                     { link: '/dystopia/6A', message: '“Yes, thank you.”' },
-                    { link: '/dystopia', message: '“No, thank you, I’ll leave now.”' }
+                    { link: '/dystopia', message: '“No, I’d rather take my chances out there...”' }
                 ]}
             />
         </div>

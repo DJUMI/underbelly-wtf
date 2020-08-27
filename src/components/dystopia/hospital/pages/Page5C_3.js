@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { Dialogue } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page5C_3 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia4C_3.jpg';
+    const { stopSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        stopSong();
+    }, []);
 
     return (
 

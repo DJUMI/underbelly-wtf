@@ -12,7 +12,7 @@ const Page3C_3 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'HDS Guard "Moore"', message: 'Have you been living under a f*cking rock? Without us, the district would erupt in chaos. People would be trying to break-in every other day. It’s our duty to keep the blessed protected.' }
+                    { speaker: 'HDS Guard "Moore"', message: 'Have you been living under a f*cking rock? Without us, the district would erupt into chaos. People would be trying to break in every other day. It’s our duty to keep the blessed protected.' }
                 ]}
                 responses={[
                     { link: '/dystopia/3C_4', message: '"Oh. Okay, how do I get into the Hospital District?"' }
