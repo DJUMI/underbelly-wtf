@@ -127,6 +127,25 @@ p {
   width: auto;
 }
 
+.modal__container--article {
+  position: absolute;
+  top: 10vh;
+  left: 51vw;
+  height: 80vh;
+  width: 40vw;
+  z-index: 2;
+  background-color: white;
+  overflow: scroll;
+  padding: 10px;
+  border: 2px solid black
+}
+
+.modal__text {
+    color: black;
+    font-family: "courier";
+    font-size: larger;
+}
+
 /**************** clickable ******************/
 
 .clickable:hover {
@@ -346,6 +365,10 @@ p {
 
 .dialogue__icon--dystopia {
   width: 5vw;
+}
+
+.dialogue__icon--dystopia:hover {
+  cursor: pointer;
 }
 
 .dialogue__text--dystopia {
@@ -611,6 +634,30 @@ p {
 
 .page--transition.active {
   opacity: 1;
+}
+
+.page--transition--red {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+  background-color: red;
+}
+
+.page--transition--red.active {
+  opacity: 0.75;
+}
+
+.page--transition--redder {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+  background-color: red;
+}
+
+.page--transition--redder.active {
+  opacity: 0.95;
 }
 
 .page--lazy {

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Dialogue } from '../../../common';
+import { EndDialogue } from '../../../common';
+import { End } from '../../../landing/pages';
 import bg1 from '../../../../assets/images/landing/end.png';
 
 const Page11C_4 = () => {
@@ -9,31 +10,31 @@ const Page11C_4 = () => {
 
     const [activePanel, setActivePanel] = useState(1);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setActivePanel(2);
-        }, 10000);
-    }, []);
+    const renderEnd = () => (
+        <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
+            {activePanel === 2 ? <End /> : null}
+        </div>
+    );
 
-    return (
-        <div className='page'>
+    const renderContent = () => (
+        <div className={`page--transition ${activePanel === 1 ? 'active' : ''}`}>
             <img className='page__image' src={bg} alt='Close up of doctor' />
-            <Dialogue
+            <EndDialogue
                 theme='dystopia'
                 bottom
+                buttonPress={() => setActivePanel(2)}
                 messages={[
                     { speaker: 'Female Doctor', message: 'And whatever you do. You must never return to the Hospital District. They will kill you if they find you. Do you understand?' },
                     { speaker: '', message: 'Good.' }
                 ]}
             />
-            <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
-                <img className='page__image' src={bg1} alt='Game Over' />
-                <Link to='/LP5'>
-                    <div className='LP__text_container--end'>
-                        <span className='LP__text'>Try again?</span>
-                    </div>
-                </Link>
-            </div>
+        </div>
+    );
+
+    return (
+        <div className='page'>
+            {renderContent()}
+            {renderEnd()}
         </div>
     );
 };

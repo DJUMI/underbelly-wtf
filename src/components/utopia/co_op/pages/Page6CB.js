@@ -11,7 +11,7 @@ const Page6CB = () => {
             <Dialogue
                 theme='utopia'
                 messages={[
-                    { speaker: 'Housemate', message: 'Hey, friend! How\'s your head? Our companions told us you got injured pretty bad today and that you even went to the hospital. Is it really as beautiful and everyone says?' }
+                    { speaker: 'Housemate', message: 'Hey, friend! How\'s your head? Our companions told us you got injured pretty bad today and that you even went to the hospital. Is it really as beautiful as everyone says?' }
                 ]}
                 responses={[
                     { link: '/utopia/6CC', message: '"I think I’m good. Everyone was really nice. But I still feel a little bit fuzzy. Have you ever had a memory removed before?"' }

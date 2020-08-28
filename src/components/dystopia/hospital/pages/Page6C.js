@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Dialogue } from '../../../common';
+import { Dialogue, EndDialogue } from '../../../common';
 import { End } from '../../../landing/pages';
 
 const Page6C = () => {
@@ -13,10 +13,6 @@ const Page6C = () => {
         setTimeout(() => {
             setActivePanel(2);
         }, 10000);
-
-        setTimeout(() => {
-            setActivePanel(3);
-        }, 20000);
     }, []);
 
     const render6C_1 = () => (
@@ -35,9 +31,11 @@ const Page6C = () => {
     const render6C_2 = () => (
         <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
             <img className='page__image' src={bg1} alt='Hospital reception desk' />
-            <Dialogue
+            <EndDialogue
                 theme='dystopia'
                 bottom
+                startDelay={11000}
+                buttonPress={() => setActivePanel(3)}
                 messages={[
                     { speaker: '', message: 'After only a week of training, which consisted of memorizing prayers, you are purchased by one of the residents. Your duties are to now care for your Blessed resident for the rest of your time in the District.' }
                 ]}

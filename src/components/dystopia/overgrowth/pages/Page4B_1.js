@@ -10,16 +10,21 @@ const Page4B_1 = () => {
 
     useEffect(() => {
         playFX('shot');
-        setTimeout(() => {
-            setActivePanel(2);
-        }, 7000);
+        setTimeout(() => setActivePanel(2), 500);
+        setTimeout(() => setActivePanel(1), 1000);
+        setTimeout(() => setActivePanel(2), 1500);
+        setTimeout(() => setActivePanel(1), 2000);
+        setTimeout(() => setActivePanel(2), 2500);
+        setTimeout(() => setActivePanel(1), 3000);
+        setTimeout(() => setActivePanel(3), 3500);
     }, []);
 
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Woman attacking you with machete' />
-            <div className={`page--transition ${activePanel === 2 ? 'active' : ''}`}>
-                {activePanel === 2 ? <End /> : null}
+            <div className={`page--transition--red ${activePanel === 2 ? 'active' : ''}`} />
+            <div className={`page--transition ${activePanel === 3 ? 'active' : ''}`}>
+                {activePanel === 3 ? <End /> : null}
             </div>
         </div>
     );
