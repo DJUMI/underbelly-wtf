@@ -6,7 +6,7 @@ import { FlyerModal, MaskModal, PaperModal } from '../modals';
 const Page2B = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/overgrowth/Dystopia2B.jpg';
 
-    const [showModal, setShowModal] = useState(1);
+    const [showModal, setShowModal] = useState(0);
 
     const renderButtons = () => (
         <>

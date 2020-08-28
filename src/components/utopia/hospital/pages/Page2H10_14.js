@@ -17,7 +17,7 @@ import bg14 from '../../../../assets/images/utopia/hospital/2H14_UTOPIA.jpg';
 
 const Page2H10_14 = () => {
     const [activePanel, setActivePanel] = useState(6);
-    const { startSong, stopSong } = useContext(AudioContext);
+    const { playFX, startSong, stopSong } = useContext(AudioContext);
 
     useEffect(() => {
         startSong('track2H5');
@@ -32,6 +32,7 @@ const Page2H10_14 = () => {
 
         setTimeout(() => {
             setActivePanel(9);
+            playFX('smack')
         }, 30000);
 
         setTimeout(() => {
@@ -60,25 +61,25 @@ const Page2H10_14 = () => {
 
     const render2H6 = () => (
         <div className={`page--transition ${activePanel === 6 ? 'active' : ''}`}>
-            <img className='page__image' src={bg6} alt='Companion sending out an alert signal' />
+            <img className='page__image' src={bg6} alt='Picking flowers' />
         </div>
     );
 
     const render2H7 = () => (
         <div className={`page--transition ${activePanel === 7 ? 'active' : ''}`}>
-            <img className='page__image' src={bg7} alt='Companion sending out an alert signal' />
+            <img className='page__image' src={bg7} alt='Glowing around picked flowers' />
         </div>
     );
 
     const render2H8 = () => (
         <div className={`page--transition ${activePanel === 8 ? 'active' : ''}`}>
-            <img className='page__image' src={bg8} alt='Companion sending out an alert signal' />
+            <img className='page__image' src={bg8} alt='Growing back' />
         </div>
     );
 
     const render2H9 = () => (
         <div className={`page--transition ${activePanel === 9 ? 'active' : ''}`}>
-            <img className='page__image' src={bg9} alt='Companion sending out an alert signal' />
+            <img className='page__image' src={bg9} alt='Whack' />
         </div>
     );
 

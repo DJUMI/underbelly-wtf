@@ -15,14 +15,14 @@ const End = () => {
     const renderButtons = () => (
         <div className='end__container'>
             <Link className='end__container' to='/LP5'>
-                <span className='LP__text--clickable'>Restart</span>
+                <span className='LP__text--clickable'>Try again?</span>
             </Link>
-            <Link className='end__container' to='/credits'>
+            {/* <Link className='end__container' to='/credits'>
                 <span className='LP__text--clickable'>Credits</span>
             </Link>
             <Link className='end__container' to='/jukebox'>
                 <span className='LP__text--clickable'>Jukebox</span>
-            </Link>
+            </Link> */}
         </div>
     );
 

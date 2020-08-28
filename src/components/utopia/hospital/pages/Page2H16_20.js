@@ -32,7 +32,7 @@ const Page2H16_20 = () => {
 
         setTimeout(() => {
             setShowBubble(true);
-        }, 45000);
+        }, 56000);
 
         setTimeout(() => {
             setShowButton(true);

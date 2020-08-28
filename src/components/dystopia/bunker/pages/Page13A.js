@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import { LinkButton, OpenButton } from '../../../common';
 import MapModal from '../modals/MapModal';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page13A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia10A.jpg';
     const bg1 = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia10A_nomap.jpg';
     const [showModal, setShowModal] = useState(false);
+    const { playSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        playSong('track9A')
+    },[]);
 
     const renderButtons = () => (
         <>

@@ -9,7 +9,10 @@ const initState = {
     fx: {
         crash: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/crash.mp3"),
         shot: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/shot.mp3"),
-        to_dystopia: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/To_Dystopia.mp3");
+        to_dystopia: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/To_Dystopia.mp3"),
+        open: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/Door_Open.mp3"),
+        close: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/Door_Close.mp3"),
+        smack: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/smack.mp3"),
     },
     tracks: {
         track1A: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/1A.mp3"),

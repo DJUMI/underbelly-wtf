@@ -13,7 +13,7 @@ const Container = styled.div`
   overflow: hidden;
 `
 
-const LinkButton = ({ link, color, top, left, width }) => (
+const LinkButton = ({ onClick, link, color, top, left, width }) => (
     <Container top={top} left={left} width={width}>
         <svg viewBox='0 0 100 100' className='link-button__svg--box' preserveAspectRatio='none'>
             <defs>
@@ -23,7 +23,7 @@ const LinkButton = ({ link, color, top, left, width }) => (
                 </radialGradient>
             </defs>
             <Link to={link}>
-                <rect className='link-button__svg' width="100" height="100" fill="url(#RadialGradient1)" />
+                <rect className='link-button__svg' onClick={onClick} width="100" height="100" fill="url(#RadialGradient1)" />
             </Link>
         </svg>
     </Container>

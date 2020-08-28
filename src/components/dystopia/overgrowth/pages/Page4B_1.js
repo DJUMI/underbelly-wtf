@@ -16,7 +16,7 @@ const Page4B_1 = () => {
         setTimeout(() => setActivePanel(1), 2000);
         setTimeout(() => setActivePanel(2), 2500);
         setTimeout(() => setActivePanel(1), 3000);
-        setTimeout(() => setActivePanel(3), 3500);
+        setTimeout(() => setActivePanel(3), 5500);
     }, []);
 
     return (
