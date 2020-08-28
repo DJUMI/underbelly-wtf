@@ -14,7 +14,7 @@ const Page1C = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='View of the capitol from state street' />
-            <BackButton link='/dystopia/1B' theme='dystopia' />
+            <BackButton link='/dystopia/1B' theme='dystopia' white />
             <LinkButton title='capitol' link='/dystopia/1CA' top='33vh' left='46vw' width='10vw'/>
             <LinkButton title='guards' link='/dystopia/2C' top='40vh' left='79.5vw' width='5vw'/>
         </div>

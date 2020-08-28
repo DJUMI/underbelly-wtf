@@ -10,7 +10,7 @@ const Page2B = () => {
 
     const renderButtons = () => (
         <>
-            <BackButton link='/dystopia/1B' theme='dystopia' />
+            <BackButton link='/dystopia/1B' theme='dystopia' white />
             <OpenButton title='newspaper' onClick={() => setShowModal(1)} top='51vh' left='30vw' width='20vw' />
             <OpenButton title='masks' onClick={() => setShowModal(2)} top='37.5vh' left='56.5vw' width='10vw' />
             <OpenButton title='flier' onClick={() => setShowModal(3)} top='22vh' left='54vw' width='10vw' />
@@ -24,7 +24,7 @@ const Page2B = () => {
             {showModal === 1 ? <PaperModal /> : null}
             {showModal === 2 ? <MaskModal /> : null}
             {showModal === 3 ? <FlyerModal /> : null}
-            {showModal ? <CloseButton onClick={() => setShowModal(0)} theme='dystopia'/> : null}
+            {showModal ? <CloseButton onClick={() => setShowModal(0)} theme='dystopia' white /> : null}
         </div>
     );
 };

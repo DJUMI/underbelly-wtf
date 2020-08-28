@@ -19,7 +19,7 @@ const Page13A = () => {
     return (
         <div className='page'>
             {showModal ? <img className='page__image' src={bg1} alt='Bedroom' /> : <img className='page__image' src={bg} alt='Bedroom' />}
-            {showModal ? <MapModal /> : renderButtons()}
+            {showModal ? <MapModal onClose={() => setShowModal(false)} /> : renderButtons()}
         </div>
     );
 };

@@ -1,4 +1,4 @@
 export default {
-    typeSpeed: 50,
-    typeSpeedFast: 30,
+    typeSpeed: 40,
+    typeSpeedFast: 20,
 };

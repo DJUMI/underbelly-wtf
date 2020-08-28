@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page1A = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia1A.jpg';
-    
+    const { startSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        startSong('track1A');
+    }, []);
+
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Computer Screen' />

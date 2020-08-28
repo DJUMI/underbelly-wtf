@@ -11,7 +11,7 @@ const Page11A = () => {
     return (
         <div className='page'>
             {showModal ? <img className='page__image' src={bg1} alt='Computer Screen' /> : <img className='page__image' src={bg} alt='Computer Screen' />}
-            {showModal ? <MapModal /> : <OpenButton title='map' onClick={() => setShowModal(true)} top='82vh' left='5vw' width='10vw' />}
+            {showModal ? <MapModal from={2} onClose={() => setShowModal(false)} /> : <OpenButton title='map' onClick={() => setShowModal(true)} top='82vh' left='5vw' width='10vw' />}
         </div>
     );
 };

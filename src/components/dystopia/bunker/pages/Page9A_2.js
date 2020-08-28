@@ -3,7 +3,7 @@ import React from 'react';
 import { BackButton } from '../../../common';
 
 const Page9A_2 = () => {
-    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia9A_2A.jpg';
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia9A_2A.png';
 
     return (
         <div className='page'>

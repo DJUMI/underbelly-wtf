@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import { BackButton, Dialogue, PauseButton, PlayButton } from '../../../common';
+import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page13A_1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia13A_1.jpg';
     const [showTitle, setShowTitle] = useState(false);
     const [showPlay, setShowPlay] = useState(true);
+    const { stopSong } = useContext(AudioContext);
 
     const renderTitle = () => (
         <Dialogue
@@ -50,7 +52,7 @@ const Page13A_1 = () => {
         <div className='page'>
             <img className='page__image' src={bg} alt='ipod' />
             {renderButtons()}
-            <BackButton link='/dystopia/13A' theme='dystopia' />
+            <BackButton link='/dystopia/13A' onClick={stopSong} theme='dystopia' />
             {showTitle ? renderTitle() : null}
         </div>
     );

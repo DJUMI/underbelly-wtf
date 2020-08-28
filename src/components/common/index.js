@@ -9,3 +9,4 @@ export * from './NextButton';
 export * from './OpenButton';
 export * from './PlayButton';
 export * from './PauseButton';
+export * from './SquareButton';

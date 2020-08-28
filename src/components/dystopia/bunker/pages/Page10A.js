@@ -12,6 +12,7 @@ const Page10A = () => {
         <>
             <Dialogue
                 theme='dystopia'
+                fast
                 messages={[
                     { speaker: '', message: '“Looks like my dollar bills don’t have any value here. Trade is the currency.”' }
                 ]}
@@ -23,7 +24,7 @@ const Page10A = () => {
     return (
         <div className='page'>
             {showModal ? <img className='page__image' src={bg1} alt='Computer Screen' /> : <img className='page__image' src={bg} alt='Computer Screen' />}
-            {showModal ? <MapModal /> : renderContent()}
+            {showModal ? <MapModal from={1} onClose={() => setShowModal(false)}/> : renderContent()}
         </div>
     );
 };

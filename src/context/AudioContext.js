@@ -39,6 +39,7 @@ const initState = {
         track7L2: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/utopia/7L2.mp3"),
 
         get_through: new Audio('https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/get_through.mp3'),
+        d_start: new Audio('https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/d_start.mp3'),
     }
 
 };

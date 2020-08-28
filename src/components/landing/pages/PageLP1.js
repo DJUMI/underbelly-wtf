@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BorderButton } from '../../common';
+import { SquareButton } from '../../common';
 
 const PageLP1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP1.png';
@@ -8,7 +8,7 @@ const PageLP1 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Enter' />
-            <BorderButton link='/LP2' top='44vh' left='21vw' height='14vh' width='58vw' />
+            <SquareButton link='/LP2' top='42vh' left='20vw' height='18vh' width='60vw' />
         </div>
     );
 };

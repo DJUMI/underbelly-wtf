@@ -11,7 +11,7 @@ const Page2HA = () => {
             <Dialogue
                 theme='utopia'
                 messages={[
-                    { speaker: 'Nurse', message: 'Good morning Friend, so happy you’re finally awake. How are you feeling?' }
+                    { speaker: 'Nurse', message: 'Good morning friend, so happy you’re finally awake. How are you feeling?' }
                 ]}
                 responses={[
                     { link: '/utopia/2HB', message: '"I feel fine … where am I?"' }

@@ -93,7 +93,7 @@ const Page2H16_20 = () => {
             {activePanel === 20 ? <Dialogue
                 theme='utopia'
                 messages={[
-                    { speaker: 'Doctor', message: 'And done, Friend! I’m going to send over some information to your companion now that they can tell you once you’re home safe. If you need a ride home just let the receptionist know as you leave.' }
+                    { speaker: 'Doctor', message: 'And done, friend! I’m going to send over some information to your companion now that they can tell you once you’re home safe. If you need a ride home just let the receptionist know as you leave.' }
                 ]}
             /> : null}
         </div>

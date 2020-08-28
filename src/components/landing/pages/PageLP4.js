@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 
 import t from '../../../constants/text';
+import { SquareButton } from '../../common';
 
 const PageLP4 = () => {
     const bg1 = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/landing/LP4_1.png';
@@ -82,12 +82,8 @@ const PageLP4 = () => {
 
     const renderButtons = () => (
         <>
-            <Link to='/utopia'>
-                <div className='clickable LP4__button--utopia' />
-            </Link>
-            <Link to='/dystopia'>
-                <div className='clickable LP4__button--dystopia' />
-            </Link>
+            <SquareButton link='/utopia' top='88vh' left='26.5vw' height='6.5vh' width='16.5vw' />
+            <SquareButton link='/dystopia/begin' top='88vh' left='54.6vw' height='6.5vh' width='22.5vw' />
         </>
 
     );

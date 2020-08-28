@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
+import { SquareButton } from '../../common';
 import { Context as AudioContext } from '../../../context/AudioContext';
 
 const PageLP5 = () => {
@@ -8,7 +8,7 @@ const PageLP5 = () => {
     const { stopSong } = useContext(AudioContext);
 
     useEffect(() => {
-        stopSong('track1L');
+        stopSong();
     }, []);
 
     return (
@@ -24,12 +24,8 @@ const PageLP5 = () => {
                 <span className='LP__text'>Best of luck and remember, nothing is exactly as it seems.</span>
                 <br></br><br></br><br></br>
             </div>
-            <Link to='/utopia'>
-                <div className='clickable LP4__button--utopia' />
-            </Link>
-            <Link to='/dystopia/begin'>
-                <div className='clickable LP4__button--dystopia' />
-            </Link>
+            <SquareButton link='/utopia' top='88vh' left='26.5vw' height='6.5vh' width='16.5vw' />
+            <SquareButton link='/dystopia/begin' top='88vh' left='54.6vw' height='6.5vh' width='22.5vw' />
         </div>
     );
 };

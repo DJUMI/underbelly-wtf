@@ -6,5 +6,4 @@ export * from './Page11C_2';
 export * from './Page11C_3';
 export * from './Page11C_4';
 export * from './Page11C_5';
-export * from './Page11C_6';
 export * from './Page12C';

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NextButton } from '../../../common';
-import bg from '../../../../assets/images/utopia/nature/3L5_UTOPIA.jpg'
+import bg from '../../../../assets/images/utopia/nature/3L5_UTOPIA.jpg';
 
 const Page3L_5 = () => {
 

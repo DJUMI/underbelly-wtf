@@ -26,7 +26,7 @@ const Page1B = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='View of boarded up house and abandoned car covered in overgrowth' />
-            {state.hasBunker ? <BackButton link='/dystopia/4A' theme='dystopia' /> : <BackButton link='/dystopia' theme='dystopia' />}
+            {state.hasBunker ? <BackButton link='/dystopia/4A' theme='dystopia' white /> : <BackButton link='/dystopia' theme='dystopia' white />}
             {renderHouse()}
             <LinkButton title='car' link='/dystopia/2B' top='15vh' left='65vw' width='20vw'/>
             <LinkButton title='sign' link='/dystopia/1C' top='11vh' left='83.5vw' width='10vw'/>
