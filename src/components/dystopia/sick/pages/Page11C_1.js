@@ -13,7 +13,7 @@ const Page11C_1 = () => {
                 bottom
                 buttonLink='/dystopia/11C_2'
                 messages={[
-                    { speaker: 'Female Doctor', message: 'Fortunately the plague is very rare and is now treatable with the right vaccine. Germany sent us the instructions after the Sheboygan District was obliterated last year.' },
+                    { speaker: 'Female Doctor', message: 'Fortunately, the plague is very rare and is now treatable with the right vaccine. Germany sent us the instructions after the Sheboygan District was obliterated last year.' },
                     { speaker: '', message: 'We would like to spread the vaccine to the rest of the Districts, but the guards and the Hospital District have maintained control of the narrative through alternative-facts.  We’ve had to keep the truth a secret to protect as many people as possible.' }
                 ]}
             />
