@@ -3,7 +3,7 @@ import React from 'react';
 import { Dialogue } from '../../../common';
 
 const Page5C_2 = () => {
-    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia4C_1.jpg';
+    const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/hospital/Dystopia4C_2.jpg';
 
     return (
         <div className='page'>
@@ -12,7 +12,7 @@ const Page5C_2 = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Receptionist', message: 'Wonderful. Please, come closer, child. Now tell me, what is your wealth?' }
+                    { speaker: 'Receptionist', message: 'Wonderful. The scan has already been completed and you appear to be in good health. Now, please come closer child. Tell me, what is your wealth?' }
                 ]}
                 responses={[
                     { link: '/dystopia/5C_3', message: '"under $50,000"' },

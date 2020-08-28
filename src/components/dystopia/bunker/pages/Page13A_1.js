@@ -1,13 +1,17 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { BackButton, Dialogue, PauseButton, PlayButton } from '../../../common';
 import { Context as AudioContext } from '../../../../context/AudioContext';
 
 const Page13A_1 = () => {
     const bg = 'https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/images/dystopia/bunker/Dystopia13A_1.jpg';
-    const [showTitle, setShowTitle] = useState(false);
-    const [showPlay, setShowPlay] = useState(true);
-    const { stopSong } = useContext(AudioContext);
+    const [showTitle, setShowTitle] = useState(true);
+    const [showPlay, setShowPlay] = useState(false);
+    const { stopSong, startSong } = useContext(AudioContext);
+
+    useEffect(() => {
+        startSong('get_through')
+    }, [])
 
     const renderTitle = () => (
         <Dialogue
