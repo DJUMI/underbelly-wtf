@@ -13,6 +13,7 @@ const initState = {
         open: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/Door_Open.mp3"),
         close: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/Door_Close.mp3"),
         smack: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/SoundFX/utopia/smack.mp3"),
+        scratch: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/scratch.mp3"),
     },
     tracks: {
         track1A: new Audio("https://underbelly-wtf-assets.s3-us-west-2.amazonaws.com/music/dystopia/1A.mp3"),
