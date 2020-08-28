@@ -12,15 +12,15 @@ const Page2H1_4 = () => {
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(2);
-        }, 5000);
+        }, 7000);
 
         setTimeout(() => {
             setActivePanel(3);
-        }, 10000);
+        }, 14000);
 
         setTimeout(() => {
             setActivePanel(4);
-        }, 20000);
+        }, 23000);
     }, []);
 
     const render2H1 = () => (
@@ -46,6 +46,7 @@ const Page2H1_4 = () => {
             <img className='page__image' src={bg3} alt='Nurse exiting the room' />
             <Dialogue
                 theme='utopia'
+                startDelay={15000}
                 messages={[
                     { speaker: 'Nurse', message: 'Alright, I\'ll be right outside the door. Click start on the remote when you\'re ready.' },
                 ]}

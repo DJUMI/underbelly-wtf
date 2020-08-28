@@ -16,7 +16,7 @@ const Page2H16_20 = () => {
     useEffect(() => {
         setTimeout(() => {
             setActivePanel(17);
-        }, 8000);
+        }, 10000);
 
         setTimeout(() => {
             setActivePanel(18);
@@ -24,7 +24,7 @@ const Page2H16_20 = () => {
 
         setTimeout(() => {
             setActivePanel(19);
-        }, 32000);
+        }, 35000);
 
         setTimeout(() => {
             setActivePanel(20);

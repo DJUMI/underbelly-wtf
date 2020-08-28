@@ -15,7 +15,7 @@ const Page2H5 = () => {
     return (
         <div className='page'>
             <img className='page__image' src={bg} alt='Sitting in grass with companion' />
-            <LinkButton title='flower' link='/utopia/2H6' top='20vh' left='47vw' width='10vw' />
+            <LinkButton title='flower' link='/utopia/2H10_14' top='20vh' left='47vw' width='10vw' />
         </div>
     );
 };
