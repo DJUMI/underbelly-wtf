@@ -37,7 +37,7 @@ const PageLP4 = () => {
                 <br></br><br></br><br></br>
                 <Typed
                     className='LP__text'
-                    strings={['In fact it\'s encouraged.']}
+                    strings={['In fact, it\'s encouraged.']}
                     typeSpeed={t.typeSpeedFast}
                     showCursor={false}
                     startDelay={5500}

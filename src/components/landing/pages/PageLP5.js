@@ -19,7 +19,7 @@ const PageLP5 = () => {
                 <br></br><br></br><br></br>
                 <span className='LP__text'>The worlds are intended to be explored. You may have to go through each more than once.</span>
                 <br></br><br></br><br></br>
-                <span className='LP__text'>In fact it's encouraged.</span>
+                <span className='LP__text'>In fact, it's encouraged.</span>
                 <br></br><br></br><br></br>
                 <span className='LP__text'>Best of luck and remember, nothing is exactly as it seems.</span>
                 <br></br><br></br><br></br>
