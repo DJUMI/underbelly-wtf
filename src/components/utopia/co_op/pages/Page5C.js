@@ -6,10 +6,15 @@ import { Context as AudioContext } from '../../../../context/AudioContext';
 import bg from '../../../../assets/images/utopia/co_op/5C_UTOPIA.jpg'
 
 const Page5C = () => {
-    const { startSong } = useContext(AudioContext);
+    const { playFX, startSong } = useContext(AudioContext);
 
     useEffect(() => {
         startSong('track5C_U');
+
+        setTimeout(() => {
+            playFX('close');
+        }, 250)
+
     }, []);
     return (
         <div className='page'>
