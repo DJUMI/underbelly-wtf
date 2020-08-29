@@ -12,7 +12,7 @@ const Page11C = () => {
                 theme='dystopia'
                 bottom
                 messages={[
-                    { speaker: 'Female Doctor', message: 'Welcome to the Sick District.' }
+                    { speaker: 'Doctor', message: 'Welcome to the Sick District.' }
                 ]}
                 responses={[
                     { link: '/dystopia/11C_1', message: '"I thought this was going to be a literal plague zone."'},

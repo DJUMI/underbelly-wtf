@@ -24,7 +24,7 @@ const Page11C_4 = () => {
                 bottom
                 buttonPress={() => setActivePanel(2)}
                 messages={[
-                    { speaker: 'Female Doctor', message: 'And whatever you do. You must never return to the Hospital District. They will kill you if they find you. Do you understand?' },
+                    { speaker: 'Doctor', message: 'And whatever you do. You must never return to the Hospital District. They will kill you if they find you. Do you understand?' },
                     { speaker: '', message: 'Good.' }
                 ]}
             />
